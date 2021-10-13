@@ -81,9 +81,7 @@ html {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>DIMENSIONES DE PÁGINA<<<<<<<<<<<<<<<<<<<<<<<<*/
 body {
-  min-width: 992px;
-
-  min-height: 800px;
+  min-width: 55rem;
   margin: 0 auto;
   padding: 0;
   position: relative; /*Esto controla que el footer se pegue hasta abajo*/
@@ -159,6 +157,14 @@ h4,
 h5,
 h6 {
   font-family: "Fira Sans Condensed", sans-serif;
+}
+h1:first-of-type,
+h2:first-of-type,
+h3:first-of-type,
+h4:first-of-type,
+h5:first-of-type,
+h6:first-of-type {
+  margin-top: 1rem;
 }
 
 h1 {
@@ -248,11 +254,12 @@ header {
   height: 3.1667rem;
   background-color: white;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0.3333rem 0;
   box-shadow: 0px 3px 6px #00000029;
+  z-index: 1;
   /* border-bottom: 1px solid gray; */
 }
-/*--------------------------------MENÚ---------------------------------*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<MENÚ>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 nav {
   max-width: 1024px;
   height: 100%;
@@ -308,7 +315,7 @@ a.menu-item:hover {
 }
 .selector-lenguaje {
   color: brown !important;
-  width: 27px;
+  width: 1.5rem;
   text-align: center;
   font-size: 0.6666rem !important;
   font-weight: 500 !important;
@@ -321,7 +328,7 @@ a.menu-item:hover {
 .selector-lenguaje-activo {
   /*Esta clase es para que cambie el selector e indique en que posición está (Español o Inglés)*/
   color: var(--negro) !important;
-  width: 27px;
+  width: 1.5rem;
   text-align: center;
   font-size: 0.75rem;
   font-weight: 800;
@@ -337,6 +344,15 @@ a.menu-item:hover {
   margin: 0 0.15rem;
   color: brown;
 }
+/*--------------------------------MAIN---------------------------------*/
+
+main {
+  min-height: 44.445rem;
+  background-color: wheat;
+  padding: 1rem;
+  z-index: -2;
+}
+
 /*--------------------------------FOOTER---------------------------------*/
 
 footer {
@@ -345,10 +361,7 @@ footer {
   background-color: white;
   border-bottom: 6px solid brown;
   padding: 0;
-  margin: 0;
   box-shadow: 0px -3px 6px #00000029;
-  position: absolute; /*Esto controla que el footer se pegue hasta abajo*/
-  bottom: 0; /*Esto controla que el footer se pegue hasta abajo*/
 }
 
 .nav-footer {
@@ -374,7 +387,7 @@ a.footer-item:hover {
 }
 
 #logo-neh {
-  height: 36px;
+  height: 1.7777rem;
   width: auto;
 }
 #logo-neh-a {
