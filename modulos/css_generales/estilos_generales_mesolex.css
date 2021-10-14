@@ -76,10 +76,33 @@
 
 /*>>>>>>>>>>>>>>>>>>>>>>>DIMENSIONES DE PÁGINA<<<<<<<<<<<<<<<<<<<<<<<<*/
 body {
-  min-width: 55rem;
+  min-width: 55rem; /*990px*/
   margin: 0 auto;
   padding: 0;
   position: relative; /*Esto controla que el footer se pegue hasta abajo*/
+}
+
+/*================================MAIN================================-*/
+
+main {
+  min-height: 37.35rem; /*640px*/
+  width: 100%;
+}
+
+.contenedor-general {
+  /* min-height: 33rem; */
+  max-width: 1020px;
+  margin: 0px auto;
+  padding: 0 1rem;
+
+  background-color: red;
+}
+
+.contenedor-general-rebasado {
+  /* min-height: 33rem; */
+  background-color: blue;
+  padding: 0;
+  margin: 0;
 }
 /*>>>>>>>>>>>>>>>>>>>>>>>ICONOS<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -251,12 +274,12 @@ header {
   padding: 0;
   margin: 0 0 0.3333rem 0;
   box-shadow: 0px 3px 6px #00000029;
-  z-index: 1;
+
   /* border-bottom: 1px solid gray; */
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<MENÚ>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 nav {
-  max-width: 1024px;
+  max-width: 1020px;
   height: 100%;
   margin: 0 auto;
   padding: 0 0 0 1rem;
@@ -352,14 +375,6 @@ a.menu-item:hover {
   margin: 0 0.15rem;
   color: var(--interface1);
 }
-/*--------------------------------MAIN---------------------------------*/
-
-main {
-  min-height: 44.445rem;
-  background-color: wheat;
-  padding: 1rem;
-  z-index: -2;
-}
 
 /*--------------------------------FOOTER---------------------------------*/
 
@@ -373,7 +388,7 @@ footer {
 }
 
 .nav-footer {
-  max-width: 1024px;
+  max-width: 1020px;
   height: 100%;
   padding: 0 1rem;
   margin: 0 auto;
@@ -402,7 +417,7 @@ a.footer-item:hover {
 #logo-neh-a {
   margin: 0;
   padding: 0;
-  height: 2rem; /* Compensa una inconsistencia del vinculo de la imagen*/
+  height: 2rem; /*Compensa una inconsistencia del vinculo de la imagen*/
 }
 p.footer-item {
   display: block;
