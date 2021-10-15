@@ -1,5 +1,47 @@
 .contenedor-slideshow {
   width: 100%;
-  height: 67vh;
-  background-color: blueviolet !important;
+  height: 504px;
+}
+.slide {
+  height: 100%;
+}
+.contenido-slide {
+  height: calc(504px - 1.5rem);
+}
+
+.contenedor-slideshow-anidado {
+  height: 100%;
+  max-width: 1020px;
+  margin: 0px auto;
+  padding: 1rem;
+}
+
+.contenedor-credito-slideshow {
+  padding: 0 1rem 0 0;
+  margin: 0.5rem auto 0 auto;
+  max-width: 1020px;
+}
+
+p.credito-slideshow {
+  font-size: 0.6666rem; /*12 px*/
+  line-height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: right;
+  color: var(--gris1);
+}
+/*Slides de home*/
+#slide1 {
+  background-image: url(../home-imagenes/slide1-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: 40% 0%;
+  animation: scala-background-120-a-100 15s linear 1;
+}
+/*animaciones de slider individuales*/
+@keyframes scala-background-120-a-100 {
+  100% {
+    background-size: 120%;
+    background-position: 50% 0%;
+  }
 }

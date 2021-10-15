@@ -73,10 +73,13 @@
   font-family: "Fira Sans", sans-serif;
   box-sizing: border-box;
 }
-
+* {
+  box-sizing: border-box;
+}
 /*>>>>>>>>>>>>>>>>>>>>>>>DIMENSIONES DE PÁGINA<<<<<<<<<<<<<<<<<<<<<<<<*/
 body {
   min-width: 55rem; /*990px*/
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0;
   position: relative; /*Esto controla que el footer se pegue hasta abajo*/
@@ -85,7 +88,7 @@ body {
 /*================================MAIN================================-*/
 
 main {
-  min-height: 37.35rem; /*640px*/
+  min-height: 37.35rem; /*672.3px*/
   width: 100%;
 }
 
@@ -94,13 +97,10 @@ main {
   max-width: 1020px;
   margin: 0px auto;
   padding: 0 1rem;
-
-  background-color: red;
 }
 
 .contenedor-general-rebasado {
   /* min-height: 33rem; */
-  background-color: blue;
   padding: 0;
   margin: 0;
 }
@@ -265,6 +265,11 @@ a:hover {
 
 a:visited {
   color: currentColor;
+}
+
+.blanco {
+  /*para hacer elementos tipograficos de color blanco*/
+  color: white;
 }
 /*--------------------------------HEADER---------------------------------*/
 header {
