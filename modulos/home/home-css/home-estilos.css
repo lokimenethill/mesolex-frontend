@@ -45,12 +45,12 @@ p.credito-slideshow {
     background-position: 50% 0%;
   }
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1250px) {
   .contenedor-slideshow {
     width: 100%;
-    height: 700px;
+    height: 600px;
   }
   .contenido-slide {
-    height: calc(700px - 1.5rem);
+    height: calc(600px - 1.5rem);
   }
 }
