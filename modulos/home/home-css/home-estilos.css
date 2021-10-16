@@ -38,7 +38,7 @@ p.credito-slideshow {
   background-position: 40% 0%;
   animation: scala-background-120-a-100 15s linear 1;
 }
-/*animaciones de slider individuales*/
+/* animaciones de slider individuales
 @keyframes scala-background-120-a-100 {
   100% {
     background-size: 110%;
@@ -53,4 +53,4 @@ p.credito-slideshow {
   .contenido-slide {
     height: calc(600px - 1.5rem);
   }
-}
+} */
