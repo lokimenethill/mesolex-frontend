@@ -32,16 +32,16 @@
   --library2: #edb418;
 
   --audios0: #007983;
-  --audios2: #00b5c4;
-  --audios3: #d5f9fc;
+  --audios1: #00b5c4;
+  --audios2: #d5f9fc;
 
   --flora0: #527228;
   --flora1: #729f36;
   --flora2: #c9e6a1;
 
   --videos0: #ac2864;
-  --videos2: #da3279;
-  --videos3: #ff9dc6;
+  --videos1: #da3279;
+  --videos2: #ff9dc6;
 
   /*===========Por Grupo de lengua===============*/
   --amuzgo0: #353584;
@@ -211,6 +211,11 @@ h4 {
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+h4.instrucciones {
+  color: var(--gris3);
+  font-weight: 400;
 }
 
 h5 {

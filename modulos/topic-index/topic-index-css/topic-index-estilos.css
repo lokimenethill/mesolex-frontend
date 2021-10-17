@@ -1,0 +1,75 @@
+/*CONTENEDOR DE MOSAICO*/
+.contenedor-topic-index {
+  height: 493px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  overflow-x: scroll;
+}
+
+/*MODULO DE MOSAICO*/
+.topic-index-item {
+  height: 50%;
+  width: 25%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  aspect-ratio: 1/1; /*Es para darle proporcion cuadrada, compatible con los navegadores conocidos hasta 2021. Es experimental*/
+  display: block;
+  padding: 3rem 1rem 1rem 1rem;
+  margin: 0;
+  cursor: pointer;
+}
+.topic-index-item:hover {
+  text-decoration: none;
+}
+.topic-index-item:visited {
+  color: currentColor;
+}
+
+h1.titulo-modulo {
+  font-size: 1.66rem !important;
+  font-weight: 600;
+  margin-top: 0 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+/*PARTICULARIDADES DE CADA MODULO*/
+
+#lexicons {
+  width: 50%;
+  height: 100%;
+  order: -1;
+  flex-grow: 2;
+  background-color: var(--lexicons0);
+  padding-top: 6rem !important;
+}
+#lexicons:hover {
+  background-color: var(--lexicons1);
+}
+#library {
+  background-color: var(--library1);
+}
+#library:hover {
+  background-color: var(--library2);
+}
+#audios {
+  background-color: var(--audios0);
+}
+#audios:hover {
+  background-color: var(--audios1);
+}
+
+#flora-and-fauna {
+  background-color: var(--flora0);
+}
+#flora-and-fauna:hover {
+  background-color: var(--flora1);
+}
+#videos {
+  background-color: var(--videos0);
+}
+#videos:hover {
+  background-color: var(--videos1);
+}
