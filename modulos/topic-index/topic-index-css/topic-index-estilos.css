@@ -1,11 +1,11 @@
 /*CONTENEDOR DE MOSAICO*/
 .contenedor-topic-index {
-  height: 493px;
+  height: 465px;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
   align-content: flex-start;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 /*MODULO DE MOSAICO*/
@@ -14,9 +14,9 @@
   width: 25%;
   flex-grow: 1;
   flex-shrink: 0;
-  aspect-ratio: 1/1; /*Es para darle proporcion cuadrada, compatible con los navegadores conocidos hasta 2021. Es experimental*/
+  /*aspect-ratio: 1/1; /*Es para darle proporcion cuadrada, compatible con los navegadores conocidos hasta 2021. Es experimental*/
   display: block;
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 1.5rem 1rem 1rem 1rem;
   margin: 0;
   cursor: pointer;
 }
@@ -27,13 +27,17 @@
   color: currentColor;
 }
 
-h1.titulo-modulo {
-  font-size: 1.66rem !important;
+h3.titulo-modulo {
   font-weight: 600;
   margin-top: 0 !important;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: white;
+}
+p.descripcion-modulo {
+  color: white;
+
+  line-height: 120%;
 }
 /*PARTICULARIDADES DE CADA MODULO*/
 
@@ -43,7 +47,7 @@ h1.titulo-modulo {
   order: -1;
   flex-grow: 2;
   background-color: var(--lexicons0);
-  padding-top: 6rem !important;
+  padding-top: 5rem !important;
 }
 #lexicons:hover {
   background-color: var(--lexicons1);
@@ -72,4 +76,7 @@ h1.titulo-modulo {
 }
 #videos:hover {
   background-color: var(--videos1);
+}
+
+@media only screen and (min-width: 1400px) {
 }

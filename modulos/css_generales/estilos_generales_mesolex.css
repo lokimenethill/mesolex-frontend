@@ -70,7 +70,7 @@
   /*>>>>>>>>>>>>>>>>>>>>>>>ESTILOS ELEMENENTALES<<<<<<<<<<<<<<<<<<<<<<<<*/
   /*DEFINEN LOS REM (TAMAÑO RELATIVO DE TEXTO), LA FAMILIA TIPOGRAFICA*/
   font-size: 18px; /*tamaño define los rem*/
-  font-family: "Fira Sans", sans-serif;
+
   box-sizing: border-box;
 }
 * {
@@ -88,7 +88,7 @@ body {
 /*================================MAIN================================-*/
 
 main {
-  min-height: 25rem; /*432px*/
+  min-height: calc(100vh - 8.4rem + 1px); /*25rem; /*432px*/
   width: 100%;
 }
 
@@ -233,6 +233,7 @@ h6 {
 }
 
 p.large {
+  font-family: "Fira Sans", sans-serif;
   font-size: 1.2222rem; /*22 px*/
   margin-top: 0;
   margin-bottom: 1.2222rem;
@@ -240,6 +241,7 @@ p.large {
 }
 
 p {
+  font-family: "Fira Sans", sans-serif;
   font-size: 1rem; /*18 px*/
   line-height: 140%;
   margin-top: 0;
@@ -249,12 +251,14 @@ p {
 }
 
 p.small {
+  font-family: "Fira Sans", sans-serif;
   font-size: 0.7777rem; /*14 px*/
   line-height: 160%;
   margin-top: 0;
   margin-bottom: 0.7777rem;
 }
 p.smallest {
+  font-family: "Fira Sans", sans-serif;
   font-size: 0.6666rem; /*12 px*/
   line-height: 160%;
   margin-top: 0;
@@ -262,6 +266,7 @@ p.smallest {
 }
 
 a {
+  font-family: "Fira Sans", sans-serif;
   text-decoration: none;
 }
 a:hover {
@@ -276,13 +281,53 @@ a:visited {
   /*para hacer elementos tipograficos de color blanco*/
   color: white;
 }
+/*PARA GLOTOCODE*/
+code {
+  font-family: "Fira Sans Condensed", sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 70%;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: darken;
+  padding: 2px 2px;
+  vertical-align: middle;
+}
+code:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
+}
+
+code:before {
+  content: "[";
+  margin: 0 1px;
+  color: var(--library1);
+}
+
+code:after {
+  content: "]";
+  margin: 0 1px;
+  color: var(--library1);
+}
+
+code a {
+  /* text-decoration: underline; */
+}
+
+code a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--library1);
+}
+code a:visited {
+  color: currentColor;
+}
+
 /*--------------------------------HEADER---------------------------------*/
 header {
   width: 100%;
   height: 3.1667rem;
   background-color: white;
   padding: 0;
-  margin: 0 0 0.3333rem 0;
+  margin: 0 0 1rem 0;
   box-shadow: 0px 3px 6px #00000029;
 
   /* border-bottom: 1px solid gray; */

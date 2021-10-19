@@ -1,0 +1,69 @@
+.contenedor-languaje-index {
+  height: 465px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.language-index-item {
+  height: 50%;
+  width: 33.333%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  /*aspect-ratio: 1/1; /*Es para darle proporcion cuadrada, compatible con los navegadores conocidos hasta 2021. Es experimental*/
+  display: block;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0;
+  cursor: pointer;
+  background-color: var(--interface1);
+}
+
+h3.titulo-modulo {
+  font-weight: 600;
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+}
+p.descripcion-modulo {
+  font-size: 0.8889rem;
+  color: white;
+}
+
+/* PARTICULARIDADES*/
+#amuzgo {
+  background-color: var(--amuzgo0);
+}
+#amuzgo:hover {
+  background-color: var(--amuzgo1);
+}
+#nahuatl {
+  background-color: var(--nahuatl0);
+}
+#nahuatl:hover {
+  background-color: var(--nahuatl1);
+}
+#maya {
+  background-color: var(--maya0);
+}
+#maya:hover {
+  background-color: var(--maya1);
+}
+#mixteco {
+  background-color: var(--mixteco0);
+}
+#mixteco:hover {
+  background-color: var(--mixteco1);
+}
+#totonaco {
+  background-color: var(--totonaco0);
+}
+#totonaco:hover {
+  background-color: var(--totonaco1);
+}
+#triqui {
+  background-color: var(--triqui0);
+}
+#triqui:hover {
+  background-color: var(--triqui1);
+}
