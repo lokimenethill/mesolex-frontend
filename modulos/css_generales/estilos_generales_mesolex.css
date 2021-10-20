@@ -115,7 +115,7 @@ body {
 .contenedor-1-col {
   flex-basis: calc(calc(100% - 11rem) / 12); /*11 rem son los medianiles*/
   margin-left: 1rem;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .contenedor-2-col {
