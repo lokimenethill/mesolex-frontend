@@ -67,6 +67,11 @@
   --triqui0: #ac2864;
   --triqui1: #da3279;
   --triqui2: #ff9dc6;
+
+  /*===========Estaticas===============*/
+  --about: #729f36;
+  --help: #72447b;
+
   /*>>>>>>>>>>>>>>>>>>>>>>>ESTILOS ELEMENENTALES<<<<<<<<<<<<<<<<<<<<<<<<*/
   /*DEFINEN LOS REM (TAMAÑO RELATIVO DE TEXTO), LA FAMILIA TIPOGRAFICA*/
   font-size: 18px; /*tamaño define los rem*/
@@ -84,7 +89,98 @@ body {
   padding: 0;
   position: relative; /*Esto controla que el footer se pegue hasta abajo*/
 }
+/*================================Columnaje de 12================================-*/
+.contenedor-columnas {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+.contenedor-columnas:first-child {
+  margin-left: 0 !important;
+}
+.contenedor-1-col:first-of-type,
+.contenedor-2-col:first-of-type,
+.contenedor-3-col:first-of-type,
+.contenedor-4-col:first-of-type,
+.contenedor-5-col:first-of-type,
+.contenedor-6-col:first-of-type,
+.contenedor-7-col:first-of-type,
+.contenedor-8-col:first-of-type,
+.contenedor-9-col:first-of-type,
+.contenedor-10-col:first-of-type,
+.contenedor-11-col:first-of-type,
+.contenedor-12-col:first-of-type {
+  margin-left: 0 !important;
+}
+.contenedor-1-col {
+  flex-basis: calc(calc(100% - 11rem) / 12); /*11 rem son los medianiles*/
+  margin-left: 1rem;
+  padding: 0 1rem;
+}
 
+.contenedor-2-col {
+  flex-basis: calc(calc(calc(100% - 5rem) / 12) * 2);
+  margin-left: 1rem;
+  padding: 0 1rem;
+}
+.contenedor-3-col {
+  flex-basis: calc(calc(calc(100% - 3rem) / 12) * 3);
+  margin-left: 1rem;
+  padding: 0 1rem;
+}
+.contenedor-4-col {
+  flex-basis: calc(calc(calc(100% - 2rem) / 12) * 4);
+  margin-left: 1rem;
+  padding: 0 1rem;
+}
+.contenedor-5-col {
+  flex-basis: calc(calc(calc(100% / 12) * 5) - 0.582rem);
+  margin-left: 1rem;
+  padding: 0 1rem;
+}
+.contenedor-6-col {
+  flex-basis: calc(calc(100% - 1rem) / 2);
+  margin-left: 1rem;
+  padding: 0 1rem;
+}
+.contenedor-7-col {
+  flex-basis: calc(calc(calc(100% / 12) * 7) - 0.47rem);
+  margin-left: 1rem;
+  padding: 0 1rem;
+}
+.contenedor-8-col {
+  flex-basis: calc(calc(calc(100% / 12) * 8) - 0.36rem);
+  margin-left: 1rem;
+  padding: 0 1rem;
+}
+.contenedor-9-col {
+  flex-basis: calc(calc(calc(100% / 12) * 9) - 0.25rem);
+  margin-left: 1rem;
+  padding: 0 1rem;
+}
+.contenedor-10-col {
+  flex-basis: calc(calc(calc(100% / 12) * 10) - 0.168rem);
+  margin-left: 1rem;
+  padding: 0 1rem;
+}
+.contenedor-11-col {
+  flex-basis: calc(calc(calc(100% / 12) * 11) - 0.12rem);
+  margin-left: 1rem;
+  padding: 0 1rem;
+}
+.contenedor-12-col {
+  flex-basis: 100%;
+  padding: 0 1rem;
+}
+.m-top-1rem {
+  margin-top: 1rem;
+}
+.m-top-2rem {
+  margin-top: 2rem;
+}
+.m-top-3rem {
+  margin-top: 3rem;
+}
 /*================================MAIN================================-*/
 
 main {
@@ -104,6 +200,7 @@ main {
   padding: 0;
   margin: 0;
 }
+
 /*>>>>>>>>>>>>>>>>>>>>>>>ICONOS<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 .material-icons {
@@ -246,7 +343,7 @@ p {
   line-height: 140%;
   margin-top: 0;
   margin-bottom: 1rem;
-  color: #333;
+  color: var(--gris1);
   font-weight: 400;
 }
 
@@ -429,6 +526,33 @@ a.menu-item:hover {
 .divisor-selector-lenguaje {
   margin: 0 0.15rem;
   color: var(--interface1);
+}
+
+/*--------------------------------Estaticas---------------------------------*/
+h1.titulo-estaticas {
+  text-align: right;
+}
+h2.titulo-estaticas {
+  color: var(--gris1);
+}
+h3.titulo-estaticas {
+  color: var(--gris1);
+}
+h4.titulo-estaticas {
+  color: var(--gris1);
+}
+h5.titulo-estaticas {
+  color: var(--gris1);
+}
+h6.titulo-estaticas {
+  color: var(--gris1);
+}
+
+.contenedor-titulo-estaticas {
+  border-right: 1px solid var(--interface1);
+  margin-top: 2rem;
+  position: sticky; /*titulo lateral pegajoso hacia arriba*/
+  top: 1rem;
 }
 
 /*--------------------------------FOOTER---------------------------------*/
