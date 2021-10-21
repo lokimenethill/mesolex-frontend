@@ -24,7 +24,7 @@
   text-decoration: none;
 }
 .topic-index-item:visited {
-  color: currentColor;
+  color: none;
 }
 
 h3.titulo-modulo {
@@ -102,14 +102,15 @@ p.descripcion-modulo {
   margin: 0;
   cursor: pointer;
   border-style: inset;
+  background-color: white;
 }
-.lengua-terminal-item:hover,
+
 .lengua-terminal-item:hover a {
   text-decoration: none;
   color: white;
 }
 .lengua-terminal-item:visited {
-  color: currentColor;
+  color: none;
 }
 h5.titulo-modulo-lengua-terminal {
   font-size: 0.6rem;
@@ -127,7 +128,7 @@ h3.subtitulo-modulo-lengua-terminal {
   margin-bottom: 0 !important;
 }
 code.modulo-lengua-terminal {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   margin-top: 0.2rem;
   margin-bottom: 0rem;
   display: inline-block;
@@ -141,23 +142,36 @@ code.modulo-lengua-terminal > a:hover {
 }
 
 code.modulo-lengua-terminal > a:visited {
-  color: black;
+  color: none;
 }
 h3.descripcion-modulo-lengua-terminal {
   font-size: 0.8rem;
   margin-top: 0;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.05rem;
+  letter-spacing: 0.3px;
 }
 
 /*Particularidades de cada modulo de lengua terminal*/
-
 div.item-amuzgo {
   border: solid 0.5px var(--amuzgo1);
-  color: var(--amuzgo1);
 }
 div.item-amuzgo:hover {
   background-color: var(--amuzgo1);
 }
+div.item-amuzgo .titulo-modulo-lengua-terminal {
+  color: var(--amuzgo0);
+}
+div.item-amuzgo .descripcion-modulo-lengua-terminal {
+  color: var(--amuzgo1);
+}
+div.item-amuzgo:hover .titulo-modulo-lengua-terminal {
+  color: white;
+  opacity: 0.6;
+}
+div.item-amuzgo:hover .descripcion-modulo-lengua-terminal {
+  color: white;
+}
+/* Nahuatl */
 div.item-nahuatl {
   border: solid 0.5px var(--nahuatl0);
   color: var(--nahuatl0);
@@ -165,7 +179,21 @@ div.item-nahuatl {
 div.item-nahuatl:hover {
   background-color: var(--nahuatl0);
 }
+div.item-nahuatl .titulo-modulo-lengua-terminal {
+  color: var(--nahuatl0);
+}
+div.item-nahuatl .descripcion-modulo-lengua-terminal {
+  color: var(--nahuatl1);
+}
+div.item-nahuatl:hover .titulo-modulo-lengua-terminal {
+  color: white;
+  opacity: 0.75;
+}
+div.item-nahuatl:hover .descripcion-modulo-lengua-terminal {
+  color: white;
+}
 
+/* Maya */
 div.item-maya {
   border: solid 0.5px var(--maya1);
   color: var(--maya1);
@@ -173,6 +201,21 @@ div.item-maya {
 div.item-maya:hover {
   background-color: var(--maya1);
 }
+div.item-maya .titulo-modulo-lengua-terminal {
+  color: var(--maya0);
+}
+div.item-maya .descripcion-modulo-lengua-terminal {
+  color: var(--maya1);
+}
+div.item-maya:hover .titulo-modulo-lengua-terminal {
+  color: white;
+  opacity: 0.75;
+}
+
+div.item-maya:hover .descripcion-modulo-lengua-terminal {
+  color: white;
+}
+/* Mixteco */
 div.item-mixteco {
   border: solid 0.5px var(--mixteco1);
   color: var(--mixteco1);
@@ -180,12 +223,41 @@ div.item-mixteco {
 div.item-mixteco:hover {
   background-color: var(--mixteco1);
 }
+div.item-mixteco .titulo-modulo-lengua-terminal {
+  color: var(--mixteco0);
+}
+div.item-mixteco .descripcion-modulo-lengua-terminal {
+  color: var(--mixteco1);
+}
+div.item-mixteco:hover .titulo-modulo-lengua-terminal {
+  color: white;
+  opacity: 0.65;
+}
+
+div.item-mixteco:hover .descripcion-modulo-lengua-terminal {
+  color: white;
+}
+
+/* Totonaco */
 div.item-totonaco {
   border: solid 0.5px var(--totonaco1);
   color: var(--totonaco1);
 }
 div.item-totonaco:hover {
   background-color: var(--totonaco1);
+}
+div.item-totonaco .titulo-modulo-lengua-terminal {
+  color: var(--totonaco0);
+}
+div.item-totonaco .descripcion-modulo-lengua-terminal {
+  color: var(--totonaco1);
+}
+div.item-totonaco:hover .titulo-modulo-lengua-terminal {
+  color: white;
+  opacity: 0.6;
+}
+div.item-totonaco:hover .descripcion-modulo-lengua-terminal {
+  color: white;
 }
 div.item-triqui {
   border: solid 0.5px var(--triqui1);
@@ -194,6 +266,19 @@ div.item-triqui {
 div.item-triqui:hover {
   background-color: var(--triqui1);
 }
+div.item-triqui .titulo-modulo-lengua-terminal {
+  color: var(--triqui0);
+}
+div.item-triqui .descripcion-modulo-lengua-terminal {
+  color: var(--triqui1);
+}
+div.item-triqui:hover .titulo-modulo-lengua-terminal {
+  color: white;
+  opacity: 0.7;
+}
+div.item-triqui:hover .descripcion-modulo-lengua-terminal {
+  color: white;
+}
 
 /*Boton regresar*/
 .lengua-terminal-item-boton-regresar {
@@ -201,31 +286,103 @@ div.item-triqui:hover {
   height: auto;
   aspect-ratio: 1/1;
   flex-shrink: 0;
-  /*aspect-ratio: 1/1; /*Es para darle proporcion cuadrada, compatible con los navegadores conocidos hasta 2021. Es experimental*/
-
   padding: 0.5rem;
   margin: 0;
   cursor: pointer;
   border-style: inset;
   border: solid 1px var(--interface0);
-
   display: block;
   text-align: center;
+  position: relative;
+  animation: desplegado 1.6s ease-in-out;
 }
-.lengua-terminal-item-boton-regresar:hover,
-.lengua-terminal-item-boton-regresar:hover
-  h5.titulo-modulo-lengua-terminal-instrucciones {
-  color: var(--interface0) !important;
+.lengua-terminal-item-boton-regresar:hover {
+  background-color: var(--interface1);
 }
 h5.titulo-modulo-lengua-terminal-instrucciones {
-  color: var(--gris2);
+  color: var(--interface1);
   text-align: left;
   font-size: 0.6667rem;
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+.lengua-terminal-item-boton-regresar:hover
+  h5.titulo-modulo-lengua-terminal-instrucciones {
+  color: white;
+  opacity: 0.8;
+}
+
 .lengua-terminal-item-icono-boton-regresar {
-  font-size: 6rem;
+  font-size: 5rem;
   text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20%;
+  color: var(--interface0);
+}
+.lengua-terminal-item-boton-regresar:hover
+  .lengua-terminal-item-icono-boton-regresar {
+  color: white;
+}
+
+/* Animacion de cada cuadro */
+@keyframes desplegado {
+  0% {
+    transform: translateX(600%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.lengua-terminal-item:nth-of-type(1) {
+  animation: desplegado 0.9s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(2) {
+  animation: desplegado 1.1s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(3) {
+  animation: desplegado 1.2s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(4) {
+  animation: desplegado 1.3s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(5) {
+  animation: desplegado 1.4s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(6) {
+  animation: desplegado 1.5s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(7) {
+  animation: desplegado 1.1s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(8) {
+  animation: desplegado 1.2s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(9) {
+  animation: desplegado 1.3s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(10) {
+  animation: desplegado 1.4s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(11) {
+  animation: desplegado 1.5s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(12) {
+  animation: desplegado 1.6s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(13) {
+  animation: desplegado 1.2s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(14) {
+  animation: desplegado 1.3s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(15) {
+  animation: desplegado 1.4s ease-in-out 1;
+}
+.lengua-terminal-item:nth-of-type(16) {
+  animation: desplegado 1.5s ease-in-out;
 }
