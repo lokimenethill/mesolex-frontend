@@ -6,6 +6,7 @@
   justify-content: flex-start;
   align-content: flex-start;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 /*MODULO DE MOSAICO*/
@@ -96,17 +97,17 @@ p.descripcion-modulo {
 /*MODULO DE LEXICOS*/
 
 .contenedor-mosaico-lexicos {
-  /* height: 465px; */
+  min-height: 465px;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-content: flex-start;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 .lexico-item {
   flex-basis: 16.66%;
   height: auto;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/0.93;
   flex-shrink: 0;
   /*aspect-ratio: 1/1; /*Es para darle proporcion cuadrada, compatible con los navegadores conocidos hasta 2021. Es experimental*/
   display: block;
@@ -296,7 +297,7 @@ div.item-triqui:hover .descripcion-modulo-lexico {
 .lexico-item-boton-regresar {
   flex-basis: 16.66%;
   height: auto;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/0.93;
   flex-shrink: 0;
   padding: 0.5rem;
   margin: 0;
@@ -306,7 +307,7 @@ div.item-triqui:hover .descripcion-modulo-lexico {
   display: block;
   text-align: center;
   position: relative;
-  animation: desplegado 1.6s ease-in-out;
+  animation: desplegado-lexicos 1.6s ease-in-out;
 }
 .lexico-item-boton-regresar:hover {
   background-color: var(--interface1);
