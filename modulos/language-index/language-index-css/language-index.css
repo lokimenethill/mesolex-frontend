@@ -2,6 +2,7 @@
   height: 465px;
   display: flex;
   flex-flow: row wrap;
+  overflow-y: hidden;
 }
 
 .language-index-item {
@@ -33,37 +34,53 @@ p.descripcion-modulo {
 /* PARTICULARIDADES*/
 #amuzgo {
   background-color: var(--amuzgo0);
+  animation: desplegado-gpo-lenguas 1s ease-in-out;
 }
 #amuzgo:hover {
   background-color: var(--amuzgo1);
 }
 #nahuatl {
   background-color: var(--nahuatl0);
+  animation: desplegado-gpo-lenguas 1.1s ease-in-out;
 }
 #nahuatl:hover {
   background-color: var(--nahuatl1);
 }
 #maya {
   background-color: var(--maya0);
+  animation: desplegado-gpo-lenguas 1.2s ease-in-out;
 }
 #maya:hover {
   background-color: var(--maya1);
 }
 #mixteco {
   background-color: var(--mixteco0);
+  animation: desplegado-gpo-lenguas 1.6s ease-in-out;
 }
 #mixteco:hover {
   background-color: var(--mixteco1);
 }
 #totonaco {
   background-color: var(--totonaco0);
+  animation: desplegado-gpo-lenguas 1.5s ease-in-out;
 }
 #totonaco:hover {
   background-color: var(--totonaco1);
 }
 #triqui {
   background-color: var(--triqui0);
+  animation: desplegado-gpo-lenguas 1.4s ease-in-out;
 }
 #triqui:hover {
   background-color: var(--triqui1);
+}
+
+/* Animacion desplegado-gpo-lenguas */
+@keyframes desplegado-gpo-lenguas {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
