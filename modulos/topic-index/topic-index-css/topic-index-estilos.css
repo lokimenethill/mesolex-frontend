@@ -80,3 +80,152 @@ p.descripcion-modulo {
 
 @media only screen and (min-width: 1400px) {
 }
+
+/*MODULO DE LENGUAS TERMINALES*/
+
+.contenedor-mosaico-lenguas-terminales {
+  /* height: 465px; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  overflow-x: auto;
+}
+.lengua-terminal-item {
+  flex-basis: 16.66%;
+  height: auto;
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+  /*aspect-ratio: 1/1; /*Es para darle proporcion cuadrada, compatible con los navegadores conocidos hasta 2021. Es experimental*/
+  display: block;
+  padding: 0.5rem;
+  margin: 0;
+  cursor: pointer;
+  border-style: inset;
+}
+.lengua-terminal-item:hover,
+.lengua-terminal-item:hover a {
+  text-decoration: none;
+  color: white;
+}
+.lengua-terminal-item:visited {
+  color: currentColor;
+}
+h5.titulo-modulo-lengua-terminal {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+h3.subtitulo-modulo-lengua-terminal {
+  font-size: 0.6667rem;
+
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+code.modulo-lengua-terminal {
+  font-size: 0.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0rem;
+  display: inline-block;
+  background: none;
+}
+code.modulo-lengua-terminal > a {
+  color: black;
+}
+code.modulo-lengua-terminal > a:hover {
+  text-decoration: underline;
+}
+
+code.modulo-lengua-terminal > a:visited {
+  color: black;
+}
+h3.descripcion-modulo-lengua-terminal {
+  font-size: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+
+/*Particularidades de cada modulo de lengua terminal*/
+
+div.item-amuzgo {
+  border: solid 0.5px var(--amuzgo1);
+  color: var(--amuzgo1);
+}
+div.item-amuzgo:hover {
+  background-color: var(--amuzgo1);
+}
+div.item-nahuatl {
+  border: solid 0.5px var(--nahuatl0);
+  color: var(--nahuatl0);
+}
+div.item-nahuatl:hover {
+  background-color: var(--nahuatl0);
+}
+
+div.item-maya {
+  border: solid 0.5px var(--maya1);
+  color: var(--maya1);
+}
+div.item-maya:hover {
+  background-color: var(--maya1);
+}
+div.item-mixteco {
+  border: solid 0.5px var(--mixteco1);
+  color: var(--mixteco1);
+}
+div.item-mixteco:hover {
+  background-color: var(--mixteco1);
+}
+div.item-totonaco {
+  border: solid 0.5px var(--totonaco1);
+  color: var(--totonaco1);
+}
+div.item-totonaco:hover {
+  background-color: var(--totonaco1);
+}
+div.item-triqui {
+  border: solid 0.5px var(--triqui1);
+  color: var(--triqui1);
+}
+div.item-triqui:hover {
+  background-color: var(--triqui1);
+}
+
+/*Boton regresar*/
+.lengua-terminal-item-boton-regresar {
+  flex-basis: 16.66%;
+  height: auto;
+  aspect-ratio: 1/1;
+  flex-shrink: 0;
+  /*aspect-ratio: 1/1; /*Es para darle proporcion cuadrada, compatible con los navegadores conocidos hasta 2021. Es experimental*/
+
+  padding: 0.5rem;
+  margin: 0;
+  cursor: pointer;
+  border-style: inset;
+  border: solid 1px var(--interface0);
+
+  display: block;
+  text-align: center;
+}
+.lengua-terminal-item-boton-regresar:hover,
+.lengua-terminal-item-boton-regresar:hover
+  h5.titulo-modulo-lengua-terminal-instrucciones {
+  color: var(--interface0) !important;
+}
+h5.titulo-modulo-lengua-terminal-instrucciones {
+  color: var(--gris2);
+  text-align: left;
+  font-size: 0.6667rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.lengua-terminal-item-icono-boton-regresar {
+  font-size: 6rem;
+  text-align: center;
+}
