@@ -1,0 +1,5 @@
+.contenedor-titulo-sumario-gpo-lenguas {
+  border-right: 1px solid var(--interface1);
+  position: sticky; /*titulo lateral pegajoso hacia arriba*/
+  top: 1rem;
+}

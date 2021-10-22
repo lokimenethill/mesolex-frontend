@@ -373,6 +373,25 @@ a:hover {
 a:visited {
   color: currentColor;
 }
+/* Breadcumbs */
+
+div.contenedor-breadcums {
+  text-align: right;
+  margin-bottom: 0.7777rem;
+}
+div.contenedor-breadcums * {
+  font-size: 0.6666rem;
+  text-align: right;
+  display: inline;
+}
+
+p.breadcums {
+  margin: 0 0.1111rem;
+}
+
+a.breadcums-activo {
+  font-weight: 600;
+}
 
 .blanco {
   /*para hacer elementos tipograficos de color blanco*/
