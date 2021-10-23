@@ -444,6 +444,9 @@ code:after {
   margin: 0 1px;
   color: var(--library1);
 }
+code a {
+  color: currentColor;
+}
 
 code a:hover {
   text-decoration: underline;
