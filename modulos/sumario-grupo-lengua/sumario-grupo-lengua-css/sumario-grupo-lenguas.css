@@ -59,6 +59,7 @@ div.contenedor-sumario-lenguas-terminales {
   align-items: flex-start; /*importante para que no se estire el contenido*/
   overflow-x: scroll;
   overflow-y: hidden;
+  animation: overflow-x-hidden 1.7s ease-in-out;
 }
 /* Módulo lengua terminal sumario Base de estilos */
 div.sumario-lengua-terminal-item {
@@ -198,10 +199,18 @@ h5.titulo-sumario-modulo-lexico-instrucciones {
 
 @keyframes desplegado-sumario-lexicos {
   0% {
-    transform: translateY(100%);
+    transform: translateX(700%);
   }
   100% {
-    transform: translateY(0%);
+    transform: translateX(0%);
+  }
+}
+@keyframes overflow-x-hidden {
+  0% {
+    overflow-x: hidden;
+  }
+  100% {
+    overflow-x: hidden;
   }
 }
 .sumario-lengua-terminal-item:nth-of-type(1) {
