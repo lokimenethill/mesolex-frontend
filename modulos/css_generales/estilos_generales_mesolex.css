@@ -16,11 +16,12 @@
   --gris4: #efefef;
 
   /*===========Interface===============*/
-  --interface0: #1d7671;
-  --interface1: #668e8c;
+  --interface0: #007771;
+  --interface1: #438e8a;
   --interface2: #92a1a3;
   --interface3: #afc3c1;
   --interface4: #d3ebe9;
+  --interface5: #def7f5;
 
   /*===========Por tema===============*/
   --lexicons0: #72447b;
@@ -339,8 +340,8 @@ p.large {
 
 p {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1rem; /*18 px*/
-  line-height: 140%;
+  font-size: 0.9722rem; /*17.5 px*/
+  line-height: 135%;
   margin-top: 0;
   margin-bottom: 1rem;
   color: var(--gris1);
@@ -362,6 +363,15 @@ p.smallest {
   margin-bottom: 0.6666rem;
 }
 
+p > a {
+  color: var(--interface0) !important;
+  font-weight: 400;
+}
+p > a:hover {
+  color: var(--interface1) !important;
+  font-weight: 600;
+  text-decoration-color: var(--interface1) !important;
+}
 a {
   font-family: "Fira Sans", sans-serif;
   text-decoration: none;
@@ -377,7 +387,7 @@ a:visited {
 
 div.contenedor-breadcums {
   text-align: right;
-  margin-bottom: 0.7777rem;
+  margin-bottom: 1.3rem;
 }
 div.contenedor-breadcums * {
   font-size: 0.6666rem;
@@ -392,6 +402,14 @@ p.breadcums {
 a.breadcums-activo {
   font-weight: 600;
 }
+i,
+em {
+  font-style: italic;
+}
+b,
+strong {
+  font-weight: bolder;
+}
 
 .blanco {
   /*para hacer elementos tipograficos de color blanco*/
@@ -403,14 +421,16 @@ code {
   letter-spacing: 1.5px;
   font-size: 70%;
 
-  background-color: rgba(0, 0, 0, 0.1);
-  background-blend-mode: darken;
+  /* background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: darken; */
+  background-color: var(--interface4);
   padding: 2px 2px;
   vertical-align: middle;
 }
 code:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  background-blend-mode: darken;
+  /* background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken; */
+  background-color: var(--interface5);
 }
 
 code:before {
@@ -423,10 +443,6 @@ code:after {
   content: "]";
   margin: 0 1px;
   color: var(--library1);
-}
-
-code a {
-  /* text-decoration: underline; */
 }
 
 code a:hover {

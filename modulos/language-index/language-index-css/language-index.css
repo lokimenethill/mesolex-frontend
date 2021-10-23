@@ -32,6 +32,15 @@ p.descripcion-modulo {
   color: white;
 }
 
+.descripcion-modulo code {
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: darken;
+}
+.descripcion-modulo code:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
+}
+
 /* PARTICULARIDADES*/
 #amuzgo {
   background-color: var(--amuzgo0);

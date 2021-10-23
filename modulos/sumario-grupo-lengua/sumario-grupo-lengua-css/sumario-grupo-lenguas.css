@@ -1,5 +1,236 @@
-.contenedor-titulo-sumario-gpo-lenguas {
+/* Columna de izquierda */
+
+div.contenedor-titulo-sumario-gpo-lenguas {
   border-right: 1px solid var(--interface1);
-  position: sticky; /*titulo lateral pegajoso hacia arriba*/
   top: 1rem;
+}
+/* Contenedor grupo lenguas sumario particularidades */
+#contenedor-titulo-sumario-amuzgo {
+  border-right: 1px solid var(--amuzgo0);
+}
+#contenedor-titulo-sumario-nahuatl {
+  border-right: 1px solid var(--nahuatl0);
+}
+#contenedor-titulo-sumario-maya {
+  border-right: 1px solid var(--maya0);
+}
+#contenedor-titulo-sumario-mixteco {
+  border-right: 1px solid var(--mixteco0);
+}
+#contenedor-titulo-sumario-totonaco {
+  border-right: 1px solid var(--totonaco0);
+}
+#contenedor-titulo-sumario-triqui {
+  border-right: 1px solid var(--triqui0);
+}
+
+/* Titulos grupo lenguas sumario particularidades*/
+#amuzgo-titulo-sumario {
+  color: var(--amuzgo0);
+}
+#nahuatl-titulo-sumario {
+  color: var(--nahuatl0);
+}
+#maya-titulo-sumario {
+  color: var(--maya0);
+}
+#mixteco-titulo-sumario {
+  color: var(--mixteco0);
+}
+#totonaco-titulo-sumario {
+  color: var(--totonaco0);
+}
+#triqui-titulo-sumario {
+  color: var(--triqui0);
+}
+
+/* Columna derecha */
+div.contendor-texto-sumario-grupo-lenguas {
+  max-height: 10.3rem;
+  overflow-y: auto;
+}
+/* <!-- Contenedor  mosaico lenguas terminales sumario --> */
+
+div.contenedor-sumario-lenguas-terminales {
+  height: 200px; /*define la altura para que sea scrolleable a la derecha */
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap; /*define que sea scrolleable a la derecha "no hay salto de fila"*/
+  align-items: flex-start; /*importante para que no se estire el contenido*/
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+/* Módulo lengua terminal sumario Base de estilos */
+div.sumario-lengua-terminal-item {
+  min-width: calc(
+    980px / 5.5
+  ); /*hace que en el ancho del contenedor quepan 5.5 módulos aprox*/
+  flex-basis: calc(
+    980px / 5.5
+  ); /*hace que en el ancho del contenedor quepan 5.5 módulos aprox*/
+  padding: 0.5rem;
+  aspect-ratio: 1/1; /*proporcion cuadrada. experimental*/
+  margin: 0;
+  border: 1px solid white;
+  position: relative;
+}
+
+/* Particularidades de modulo lengua terminal sumario por lengua */
+div.sumario-lengua-terminal-item-amuzgo {
+  background-color: var(--amuzgo0);
+}
+div.sumario-lengua-terminal-item-amuzgo:hover {
+  background-color: var(--amuzgo1);
+}
+div.sumario-lengua-terminal-item-nahuatl {
+  background-color: var(--nahuatl0);
+}
+div.sumario-lengua-terminal-item-nahuatl:hover {
+  background-color: var(--nahuatl1);
+}
+div.sumario-lengua-terminal-item-maya {
+  background-color: var(--maya0);
+}
+div.sumario-lengua-terminal-item-maya:hover {
+  background-color: var(--maya1);
+}
+div.sumario-lengua-terminal-item-mixteco {
+  background-color: var(--mixteco0);
+}
+div.sumario-lengua-terminal-item-mixteco:hover {
+  background-color: var(--mixteco1);
+}
+div.sumario-lengua-terminal-item-totonaco {
+  background-color: var(--totonaco0);
+}
+div.sumario-lengua-terminal-item-totonaco:hover {
+  background-color: var(--totonaco1);
+}
+div.sumario-lengua-terminal-item-triqui {
+  background-color: var(--triqui0);
+}
+div.sumario-lengua-terminal-item-triqui:hover {
+  background-color: var(--triqui1);
+}
+
+/* Título módulo lengua terminal sumario */
+.sumario-lengua-terminal-titulo {
+  font-size: 0.88rem;
+  letter-spacing: 1px;
+  color: white;
+  margin-top: 2rem !important;
+  margin-bottom: 0.3333rem;
+}
+/*glotocode lengua terminal sumario*/
+code.modulo-lexico {
+  color: white;
+  display: inline;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: darken;
+  position: absolute;
+  top: 0.5rem;
+}
+code.modulo-lexico:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
+}
+/* Very short description */
+p.sumario-modulo-lengua-termial-very-short-description {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.7777rem; /*14 px*/
+  line-height: 160%;
+  margin-top: 0.66rem !important;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+/* p.sumario-modulo-lengua-termial-very-short-description:first-of-type {
+  margin-top: 0.5rem;
+} */
+
+/*Boton regresar*/
+.sumario-lexico-item-boton-regresar {
+  flex-grow: 1;
+  flex-basis: calc(980px / 5.5);
+  min-width: calc(980px / 5.5);
+  aspect-ratio: 1/1;
+  height: auto;
+  padding: 0.5rem;
+  margin: 0;
+  cursor: pointer;
+  background-color: var(--interface1);
+  border: 1px solid white;
+
+  display: flex;
+  flex-flow: column wrap;
+
+  animation: desplegado-sumario-lexicos 1.7s ease-in-out;
+}
+.sumario-lexico-item-boton-regresar:hover {
+  background-color: var(--interface0);
+}
+h5.titulo-sumario-modulo-lexico-instrucciones {
+  color: var(--interface5);
+  text-align: left;
+  font-size: 0.6667rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.lexico-item-boton-regresar:hover h5.titulo-modulo-lexico-instrucciones {
+  color: white;
+  opacity: 0.8;
+}
+
+.sumario-lexico-item-icono-boton-regresar {
+  font-size: 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+
+  color: white;
+}
+.sumario-lexico-item-boton-regresar:hover
+  .sumario-lexico-item-icono-boton-regresar {
+  color: white;
+}
+
+@keyframes desplegado-sumario-lexicos {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.sumario-lengua-terminal-item:nth-of-type(1) {
+  animation: desplegado-sumario-lexicos 0.6s ease-in-out 1;
+}
+.sumario-lengua-terminal-item:nth-of-type(2) {
+  animation: desplegado-sumario-lexicos 0.8s ease-in-out 1;
+}
+.sumario-lengua-terminal-item:nth-of-type(3) {
+  animation: desplegado-sumario-lexicos 0.9s ease-in-out 1;
+}
+.sumario-lengua-terminal-item:nth-of-type(4) {
+  animation: desplegado-sumario-lexicos 1.1s ease-in-out 1;
+}
+.sumario-lengua-terminal-item:nth-of-type(5) {
+  animation: desplegado-sumario-lexicos 1.3s ease-in-out 1;
+}
+.sumario-lengua-terminal-item:nth-of-type(6) {
+  animation: desplegado-sumario-lexicos 1.5s ease-in-out 1;
+}
+.sumario-lengua-terminal-item:nth-of-type(7) {
+  animation: desplegado-sumario-lexicos 1.7s ease-in-out 1;
+}
+.sumario-lengua-terminal-item:nth-of-type(8) {
+  animation: desplegado-sumario-lexicos 1.9s ease-in-out 1;
+}
+.sumario-lengua-terminal-item:nth-of-type(9) {
+  animation: desplegado-sumario-lexicos 2.1s ease-in-out 1;
+}
+.sumario-lengua-terminal-item:nth-of-type(10) {
+  animation: desplegado-sumario-lexicos 2.3s ease-in-out 1;
 }
