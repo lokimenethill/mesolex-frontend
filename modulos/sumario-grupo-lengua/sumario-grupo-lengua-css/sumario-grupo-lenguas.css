@@ -47,7 +47,7 @@ div.contenedor-titulo-sumario-gpo-lenguas {
 /* Columna derecha */
 div.contendor-texto-sumario-grupo-lenguas {
   max-height: 10.3rem;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 /* <!-- Contenedor  mosaico lenguas terminales sumario --> */
 
@@ -71,9 +71,11 @@ div.sumario-lengua-terminal-item {
   ); /*hace que en el ancho del contenedor quepan 5.5 módulos aprox*/
   padding: 0.5rem;
   aspect-ratio: 1/1; /*proporcion cuadrada. experimental*/
+  min-height: calc(980px / 5.5);
   margin: 0;
   border: 1px solid white;
   position: relative;
+  cursor: pointer;
 }
 
 /* Particularidades de modulo lengua terminal sumario por lengua */
@@ -189,6 +191,7 @@ h5.titulo-sumario-modulo-lexico-instrucciones {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  padding-bottom: 7%;
 
   color: white;
 }
@@ -210,7 +213,7 @@ h5.titulo-sumario-modulo-lexico-instrucciones {
     overflow-x: hidden;
   }
   100% {
-    overflow-x: hidden;
+    overflow-x: scroll;
   }
 }
 .sumario-lengua-terminal-item:nth-of-type(1) {
@@ -242,4 +245,191 @@ h5.titulo-sumario-modulo-lexico-instrucciones {
 }
 .sumario-lengua-terminal-item:nth-of-type(10) {
   animation: desplegado-sumario-lexicos 2.3s ease-in-out 1;
+}
+/* Pantalla emergente */
+
+.fondo-pantalla-emergente {
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  bottom: 3.5rem;
+  left: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  display: none;
+  animation: desplegado-pantalla-emergente 1s cubic-bezier(0, 0.26, 0.53, 0.99);
+  overflow-y: hidden;
+}
+.contenedor-pantalla-emergente {
+  max-width: 1020px;
+  height: 486px;
+  overflow: hidden;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: white;
+  z-index: 10;
+  border-bottom: 6px solid var(--mixteco0);
+  box-shadow: 3px 4px 7px 1px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 3px 4px 7px 1px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 3px 4px 7px 1px rgba(0, 0, 0, 0.32);
+  position: relative;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+}
+
+/* Header pantalla emergente */
+nav.header-pantalla-emergente {
+  margin: 0;
+  padding: 0 !important;
+  max-height: 1.77rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  overflow: hidden;
+}
+/* Breadcums de pantalla emergente */
+.contenedor-breadcums-pantalla-emergente {
+  padding: 0 !important;
+  margin: 0.3rem 2.5rem 0 1rem;
+}
+.breadcums-pantalla-emergente {
+  font-size: 0.6666rem;
+  line-height: 100%;
+  font-weight: 300;
+  color: var(--gris1);
+  text-align: left;
+  display: inline;
+  cursor: pointer;
+}
+.separador-breadcums {
+  text-align: left;
+  font-size: 0.6666rem;
+  font-weight: 300;
+  color: var(--gris1);
+  margin: 0 0.1111rem;
+  display: inline;
+}
+/* Clase que define y marca el lugar en el que esta (breadcum final) */
+.breadcums-pantalla-emergente-activo {
+  font-size: 0.6666rem;
+  font-weight: 500;
+  color: var(--gris1) !important;
+  text-align: left;
+  display: inline;
+  margin: 0;
+}
+
+/* Contenedor X cerrar pantalla emergente */
+div.boton-cerrar {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.4rem;
+}
+/* boton X cerrar pantalla emergente */
+.cerrar {
+  padding: 0;
+  color: var(--interface2);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+.cerrar:hover {
+  color: var(--interface0) !important;
+  font-weight: 500;
+}
+/* Contenedor de titulo para pantalla emergente */
+.contenedor-titulo-pantalla-emergente {
+  margin-top: 1rem;
+  min-height: 5.2rem; /* Esta calculado para 2 renglones de titulo */
+
+  overflow-y: hidden;
+  /* Esto es para centrar el titulo verticualmente cuando hay solo 1 renglon */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.titulo-pantalla-emergente {
+  margin: 0 !important;
+  font-size: 2rem;
+}
+/* Contenedor de texto e imagen */
+.contenedor-columnas-pantalla-emergente {
+  margin-top: 1rem;
+  flex-grow: 1;
+  overflow-y: hidden;
+  max-height: 220px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.columna-izquierda-pantalla-emergente {
+  flex-basis: calc(65% - 0.5rem);
+}
+/* Contenedor para scroll de texto */
+.contenedor-texto-lengua-pantalla-emergente {
+  max-height: 220px;
+  overflow-y: scroll;
+}
+/* Contenedor para imagen derecha */
+.columna-derecha-pantalla-emergente {
+  flex-basis: calc(31% - 0.5rem);
+  align-self: flex-end;
+}
+.figure-pantalla-emergente {
+  width: 100%;
+  margin: 0;
+}
+.imagen-pantalla-emergente {
+  width: 100%;
+  aspect-ratio: 3/2;
+  margin-bottom: 0.25rem;
+}
+/* Footer pantalla emergente */
+.footer-pantalla-emergente {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.footer-columna-item {
+  flex-grow: 1;
+}
+.lexicons-footer-item-pantalla-emergente {
+  flex-grow: 1;
+}
+
+.titulo-footer-pantalla-emergente {
+  font-size: 0.8888rem;
+  font-weight: 700;
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+}
+.vinculo-footer-pantalla-emergente {
+  font-size: 0.6666rem;
+  margin-top: 0 !important;
+  display: block;
+  color: var(--interface1) !important;
+}
+.vinculo-footer-pantalla-emergente:hover {
+  color: var(--interface0) !important;
+}
+@keyframes desplegado-pantalla-emergente {
+  0% {
+    transform: translateY(-648px);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
