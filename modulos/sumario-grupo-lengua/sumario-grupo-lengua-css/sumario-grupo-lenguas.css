@@ -271,7 +271,7 @@ h5.titulo-sumario-modulo-lexico-instrucciones {
   padding: 1rem;
   background-color: white;
   z-index: 10;
-  border-bottom: 6px solid var(--mixteco0);
+  border-bottom: 6px solid;
   box-shadow: 3px 4px 7px 1px rgba(0, 0, 0, 0.32);
   -webkit-box-shadow: 3px 4px 7px 1px rgba(0, 0, 0, 0.32);
   -moz-box-shadow: 3px 4px 7px 1px rgba(0, 0, 0, 0.32);
@@ -432,4 +432,54 @@ div.boton-cerrar {
   100% {
     transform: translateY(0%);
   }
+}
+/* Particularidades de color de cada lengua en pantalla emergente sumario */
+/* Amuzgo */
+
+.contenedor-pantalla-emergente-amuzgo {
+  border-bottom-color: var(--amuzgo0);
+}
+.titulo-pantalla-emergente-amuzgo,
+.titulo-footer-pantalla-emergente-amuzgo {
+  color: var(--amuzgo0);
+}
+/* Nahuatl */
+.contenedor-pantalla-emergente-nahuatl {
+  border-bottom-color: var(--nahuatl0);
+}
+.titulo-pantalla-emergente-nahuatl,
+.titulo-footer-pantalla-emergente-nahuatl {
+  color: var(--nahuatl0);
+}
+/* Maya */
+.contenedor-pantalla-emergente-maya {
+  border-bottom-color: var(--maya0);
+}
+.titulo-pantalla-emergente-maya,
+.titulo-footer-pantalla-emergente-maya {
+  color: var(--maya0);
+}
+/* Mixteco */
+.contenedor-pantalla-emergente-mixteco {
+  border-bottom-color: var(--mixteco0);
+}
+.titulo-pantalla-emergente-mixteco,
+.titulo-footer-pantalla-emergente-mixteco {
+  color: var(--mixteco0);
+}
+/* Totonaco */
+.contenedor-pantalla-emergente-totonaco {
+  border-bottom-color: var(--totonaco0);
+}
+.titulo-pantalla-emergente-totonaco,
+.titulo-footer-pantalla-emergente-totonaco {
+  color: var(--totonaco0);
+}
+/* Triqui */
+.contenedor-pantalla-emergente-triqui {
+  border-bottom-color: var(--triqui0);
+}
+.titulo-pantalla-emergente-triqui,
+.titulo-footer-pantalla-emergente-triqui {
+  color: var(--triqui0);
 }
