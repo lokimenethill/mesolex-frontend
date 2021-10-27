@@ -1,9 +1,14 @@
+.contenedor-buscador-general-lexico {
+  margin-top: 2rem;
+}
+
 .caja-busqueda-lexico {
-  height: 2.2222rem;
+  height: 2.5rem;
   border: 1px solid var(--gris3);
   display: flex;
   align-items: center;
-  padding-left: 0.25rem;
+  padding-left: 0.38rem;
+  margin-bottom: 0.5rem;
 }
 
 .caja-busqueda-lexico:focus-within {
@@ -27,10 +32,10 @@
   display: none; /*hide original SELECT element: */
 }
 .select-selected {
-  background-color: var(--videos0);
+  background-color: var(--dr-tp-busq0);
 }
 .select-selected:hover {
-  background-color: var(--videos1);
+  background-color: var(--dr-tp-busq1);
 }
 /* Style the arrow inside the select element: */
 .select-selected:after {
@@ -51,7 +56,7 @@
 
 /* style the items (options),  */
 .select-items div {
-  color: var(--videos0);
+  color: var(--dr-tp-busq0);
   padding: 0.25rem;
   border: 1px solid transparent;
   /* border-color: transparent var(--videos1) transparent var(--videos1); */
@@ -74,7 +79,7 @@
   left: 0;
   right: 0;
   z-index: 99;
-  border: 1px solid var(--videos1);
+  border: 1px solid var(--dr-tp-busq1);
 }
 
 /* Hide the items when the select box is closed: */
@@ -84,12 +89,88 @@
 
 .select-items div:hover,
 .same-as-selected {
-  background-color: var(--videos1);
+  background-color: var(--dr-tp-busq1);
   color: white !important;
 }
+/* --------------------------------------------------------------------- */
 
 /* Dropdow parametros de palabras */
+/* The container must be positioned relative: */
+.dropdow-parametros-palabras {
+  position: relative;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.8888rem;
+  flex-basis: 19%;
+  margin-right: 0.5rem;
+}
+.dropdow-parametros-palabras:focus {
+  outline: 2px solid var(--interfacesp);
+}
 
+.dropdow-parametros-palabras select {
+  display: none; /*hide original SELECT element: */
+}
+
+.dropdow-parametros-palabras .select-selected {
+  background-color: var(--dr-par-pal0);
+}
+.dropdow-parametros-palabras .select-selected:hover {
+  background-color: var(--dr-par-pal1);
+}
+
+/* Style the arrow inside the select element:
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+} */
+
+/* Point the arrow upwards when the select box is open (active):
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+} */
+
+/* style the items (options), */
+.dropdow-parametros-palabras .select-items div {
+  color: var(--dr-par-pal0);
+  padding: 0.25rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+/*including the selected item: */
+.dropdow-parametros-palabras .select-selected {
+  color: white;
+  padding: 0.25rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+/* Style items (options): */
+.dropdow-parametros-palabras .select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid var(--dr-par-pal1);
+}
+
+/* Hide the items when the select box is closed: */
+.dropdow-parametros-palabras .select-hide {
+  display: none;
+}
+
+.dropdow-parametros-palabras .select-items div:hover,
+.dropdow-parametros-palabras .same-as-selected {
+  background-color: var(--dr-par-pal1);
+  color: white !important;
+}
 /* Dropdow opciones al añadir filtro */
 
 /* Caja de texto de busqueda*/
@@ -113,7 +194,7 @@
   font-size: 0.8888rem;
   font-weight: 400 !important;
 }
-.input-caja-busqueda-lexico::placeholder {
+.input-caja-busqueda-lexico::-webkit-input-placeholder {
   color: var(--gris3);
   font-size: 0.8888rem;
   font-weight: 400 !important;
@@ -128,9 +209,20 @@
   font-size: 0.8888rem;
   font-weight: 400 !important;
 }
-/* Contenedor de checboxes de lexicos */
+/* Contenedor general de checboxes de lexicos */
 .contenedor-general-opciones-busqueda {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
+  align-items: flex-start;
+}
+/* Contenedor de checkboxes y etiquetas */
+
+.contenedor-general-opciones-busqueda .contenedor-checkbox-custom {
+  margin-right: 0.75rem;
+  margin-left: 0 !important;
+}
+.contenedor-general-opciones-busqueda .contenedor-checkbox-custom:last-of-type {
+  margin-right: 0rem;
+  padding-right: 0 !important;
 }

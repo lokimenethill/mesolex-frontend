@@ -73,7 +73,14 @@
   /*===========Estaticas===============*/
   --about: #729f36;
   --help: #72447b;
+  /*===========Dropdowns===============*/
+  --dr-tp-busq0: #ac2864;
+  --dr-tp-busq1: #da3279;
+  --dr-tp-busq2: #ff9dc6;
 
+  --dr-par-pal0: #007983;
+  --dr-par-pal1: #00b5c4;
+  --dr-par-pal2: #d5f9fc;
   /*>>>>>>>>>>>>>>>>>>>>>>>ESTILOS ELEMENENTALES<<<<<<<<<<<<<<<<<<<<<<<<*/
   /*DEFINEN LOS REM (TAMAÑO RELATIVO DE TEXTO), LA FAMILIA TIPOGRAFICA*/
   font-size: 18px; /*tamaño define los rem*/
@@ -447,6 +454,108 @@ input[type="search"] {
   -webkit-appearance: textfield; /* hace que la apariencia en safari sea como campo de texto*/
   -moz-appearance: searchfield; /* hace que la apariencia en safari sea como campo de busqueda*/
   appearance: searchfield; /* hace que la apariencia en safari sea como campo de busqueda*/
+}
+/* label {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.7777rem;
+
+  font-weight: 400;
+  color: var(--interface2);
+} */
+input[type="checkbox"]:checked + label {
+  font-weight: 500;
+  color: var(--negro);
+}
+
+/*CHECKBOXES PERSONALIZADOS*/
+/* Estructura checkbox--------*/
+/*<label class="contenedor-checkbox-custom e2">
+                <input type="checkbox">
+                <span class="cuadro-check"></span>
+                <span class="etiqueta-checkbox">Only display inputs with sound</span>
+              </label> */
+/* Customize the label (the contenedor-checkbox-custom) */
+.contenedor-checkbox-custom {
+  display: block;
+  position: relative;
+  padding: 0.25rem 0.25rem 0.25rem 1.1rem !important; /* para evadir el cuadro de seleccion*/
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 1.2222rem;
+  margin: 0 0.25rem;
+}
+
+/* Hide the browser's default checkbox */
+.contenedor-checkbox-custom input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  margin: 0 !important;
+}
+
+/* Create a custom checkbox */
+.cuadro-check {
+  position: absolute;
+  top: 0.1667rem;
+  left: 0;
+  height: 0.8888rem;
+  width: 0.8888rem;
+  border: 1.5px solid var(--interface1);
+}
+
+/* On mouse-over, add a grey background color */
+.contenedor-checkbox-custom:hover input ~ .cuadro-check {
+  background-color: var(--interface4);
+}
+
+/* When the checkbox is checked, add a blue background */
+.contenedor-checkbox-custom input:checked ~ .cuadro-check {
+  background-color: var(--interface0);
+}
+
+/* Create the cuadro-check/indicator (hidden when not checked) */
+.cuadro-check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the cuadro-check when checked */
+.contenedor-checkbox-custom input:checked ~ .cuadro-check:after {
+  display: block;
+}
+
+/* Style the cuadro-check/indicator */
+/* .contenedor-checkbox-custom .cuadro-check:after {
+  /* left: 3px;
+  top: -1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); 
+} */
+.etiqueta-checkbox {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.7777rem;
+  line-height: 0.7777rem;
+  font-weight: 400;
+  color: var(--interface2);
+  display: block;
+}
+.etiqueta-checkbox:hover {
+  color: var(--interface0);
+}
+input:checked ~ .cuadro-check ~ .etiqueta-checkbox {
+  font-weight: 600 !important;
+  color: var(--negro) !important;
 }
 
 /*PARA GLOTOCODE*/
