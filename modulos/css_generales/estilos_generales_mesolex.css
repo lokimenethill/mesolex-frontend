@@ -22,6 +22,7 @@
   --interface3: #afc3c1;
   --interface4: #d3ebe9;
   --interface5: #def7f5;
+  --interfacesp: #009d92;
 
   /*===========Por tema===============*/
   --lexicons0: #72447b;
@@ -81,6 +82,9 @@
 }
 * {
   box-sizing: border-box;
+}
+*:focus {
+  outline: 2px solid var(--interfacesp);
 }
 /*>>>>>>>>>>>>>>>>>>>>>>>DIMENSIONES DE PÁGINA<<<<<<<<<<<<<<<<<<<<<<<<*/
 body {
@@ -261,7 +265,7 @@ main {
   border: blueviolet 1px dashed;
 }
 .e3 {
-  border: dotted olivedrab;
+  border: 1px dotted olivedrab;
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>TIPOGRAFÍA<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -364,11 +368,11 @@ p.smallest {
 }
 
 p > a {
-  color: var(--interface0) !important;
+  color: var(--interfacesp) !important;
   font-weight: 400;
 }
 p > a:hover {
-  color: var(--interface1) !important;
+  color: var(--interface0) !important;
   font-weight: 600;
   text-decoration-color: var(--interface1) !important;
 }
@@ -423,6 +427,26 @@ figcaption {
 .blanco {
   /*para hacer elementos tipograficos de color blanco*/
   color: white;
+}
+
+/* Inputs -- Creo que no funciona el font-family-- */
+input {
+  font-family: "Fira Sans", sans-serif;
+  letter-spacing: 0.5px;
+}
+select {
+  font-family: "Fira Sans", sans-serif;
+  letter-spacing: 0.5px;
+}
+option {
+  font-family: "Fira Sans", sans-serif;
+  letter-spacing: 0.5px;
+}
+input[type="search"] {
+  background-color: transparent;
+  -webkit-appearance: textfield; /* hace que la apariencia en safari sea como campo de texto*/
+  -moz-appearance: searchfield; /* hace que la apariencia en safari sea como campo de busqueda*/
+  appearance: searchfield; /* hace que la apariencia en safari sea como campo de busqueda*/
 }
 
 /*PARA GLOTOCODE*/
