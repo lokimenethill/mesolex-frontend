@@ -81,6 +81,11 @@
   --dr-par-pal0: #007983;
   --dr-par-pal1: #00b5c4;
   --dr-par-pal2: #d5f9fc;
+
+  --dr-fil-mas0: #72447b;
+  --dr-fil-mas1: #ab66b7;
+  --dr-fil-mas2: #e2c3e8;
+
   /*>>>>>>>>>>>>>>>>>>>>>>>ESTILOS ELEMENENTALES<<<<<<<<<<<<<<<<<<<<<<<<*/
   /*DEFINEN LOS REM (TAMAÑO RELATIVO DE TEXTO), LA FAMILIA TIPOGRAFICA*/
   font-size: 18px; /*tamaño define los rem*/
@@ -557,6 +562,44 @@ input[type="checkbox"]:checked + label {
 input:checked ~ .cuadro-check ~ .etiqueta-checkbox {
   font-weight: 600 !important;
   color: var(--negro) !important;
+}
+
+/* BOTONES GENERAL */
+button {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--interface1);
+  border: none;
+  margin: 0 0.5rem;
+}
+
+button:last-of-type {
+  margin-right: 0;
+}
+button:first-of-type {
+  margin-left: 0;
+}
+button:hover {
+  background-color: var(--interface0);
+}
+button:active {
+  background-color: var(--interfacesp);
+}
+
+button.btn-secundario {
+  padding: calc(0.5rem - 2px) calc(0.75rem - 2px); /* compensa la linea exterior con el tamano del boton*/
+  background-color: white;
+  color: var(--interface1);
+  border: 2px solid var(--interface1);
+}
+
+button.btn-secundario:hover {
+  border: 2px solid var(--interface0);
+  color: white;
+  background-color: var(--interface0);
 }
 
 /*PARA GLOTOCODE*/

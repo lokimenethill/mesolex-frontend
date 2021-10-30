@@ -35,10 +35,15 @@ a.texto-vinculo-readme {
   font-size: 0.6667rem;
   margin-left: 0.25rem;
   min-width: 9.25rem;
+  color: var(--negro);
 }
 a.texto-vinculo-readme:hover {
   font-weight: 500;
   color: var(--interface0) !important;
+}
+
+a.texto-vinculo-readme:visited {
+  color: currentColor;
 }
 
 .contenedor-buscador-general-lexico {
@@ -214,7 +219,81 @@ a.texto-vinculo-readme:hover {
   color: white !important;
 }
 /* Dropdow opciones al añadir filtro */
+.dropdown-opcion-filtro {
+  position: relative;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.8888rem;
+  flex-basis: 12%;
+  margin-right: 0.5rem;
+}
+.dropdown-opcion-filtro:focus {
+  outline: 3px solid #009d9375;
+}
 
+.dropdown-opcion-filtro select {
+  display: none; /*hide original SELECT element: */
+}
+
+.dropdown-opcion-filtro .select-selected {
+  background-color: var(--dr-fil-mas0);
+}
+.dropdown-opcion-filtro .select-selected:hover {
+  background-color: var(--dr-fil-mas1);
+}
+
+/* Style the arrow inside the select element: */
+/* .dropdown-opcion-filtro .select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+} */
+
+/* Point the arrow upwards when the select box is open (active): */
+/* .dropdown-opcion-filtro .select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+} */
+
+/* style the items (options), including the selected item: */
+.dropdown-opcion-filtro .select-items div {
+  color: var(--dr-fil-mas0);
+  padding: 0.25rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.dropdown-opcion-filtro .select-selected {
+  color: white;
+  padding: 0.25rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.dropdown-opcion-filtro .select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid var(--dr-fil-mas1);
+}
+
+/* Hide the items when the select box is closed: */
+.dropdown-opcion-filtro .select-hide {
+  display: none;
+}
+
+.dropdown-opcion-filtro .select-items div:hover,
+.same-as-selected {
+  background-color: var(--dr-fil-mas1);
+  color: white !important;
+}
 /* Caja de texto de busqueda*/
 
 .input-caja-busqueda-lexico {
@@ -271,8 +350,35 @@ a.texto-vinculo-readme:hover {
 
 /* BOTONES DE buscador lexico */
 .contenedor-general-botones-busqueda {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+/* Boton eliminar filtro */
+
+button.eliminar-filtro {
+  align-self: stretch;
+  flex-basis: 2rem;
+  aspect-ratio: 1/1;
+  color: var(--interface1);
+  padding: 0;
+  margin: 0;
+  border: 2px solid var(--interface1) !important;
+  background: white;
+  box-sizing: content-box;
+  margin-left: 0.25rem;
+}
+button.eliminar-filtro:hover {
+  color: white;
+  background-color: var(--interface0);
+  border-color: var(--interface0);
+}
+
+/* RESULTADOS */
+.contenedor-general-resultados {
+  margin-top: 4rem;
 }
