@@ -51,10 +51,11 @@ a.texto-vinculo-readme:visited {
 }
 
 .caja-busqueda-lexico {
-  height: 2.5rem;
   border: 1px solid var(--gris3);
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
+  justify-content: flex-start;
   padding-left: 0.38rem;
   margin-bottom: 0.5rem;
 }
@@ -69,7 +70,12 @@ a.texto-vinculo-readme:visited {
   position: relative;
   font-family: "Fira Sans", sans-serif;
   font-size: 0.8888rem;
-  flex-basis: 21%;
+  min-width: 21%;
+  flex-basis: 35%;
+  flex-grow: 1;
+  margin-top: 0.2222rem;
+  margin-bottom: 0.2222rem;
+
   margin-right: 0.5rem;
 }
 .dropdown-tipo-busqueda:focus {
@@ -78,10 +84,10 @@ a.texto-vinculo-readme:visited {
 .dropdown-tipo-busqueda select {
   display: none; /*hide original SELECT element: */
 }
-.select-selected {
+.dropdown-tipo-busqueda .select-selected {
   background-color: var(--dr-tp-busq0);
 }
-.select-selected:hover {
+.dropdown-tipo-busqueda .select-selected:hover {
   background-color: var(--dr-tp-busq1);
 }
 /* Style the arrow inside the select element: */
@@ -102,7 +108,7 @@ a.texto-vinculo-readme:visited {
 }
 
 /* style the items (options),  */
-.select-items div {
+.dropdown-tipo-busqueda .select-items div {
   color: var(--dr-tp-busq0);
   padding: 0.25rem;
   border: 1px solid transparent;
@@ -110,7 +116,7 @@ a.texto-vinculo-readme:visited {
   cursor: pointer;
 }
 /* including the selected item: */
-.select-selected {
+.dropdown-tipo-busqueda .select-selected {
   color: white;
   padding: 0.25rem;
   border: 1px solid transparent;
@@ -119,7 +125,7 @@ a.texto-vinculo-readme:visited {
 }
 
 /* Style items (options): */
-.select-items {
+.dropdown-tipo-busqueda .select-items {
   position: absolute;
   background-color: white;
   top: 100%;
@@ -130,12 +136,12 @@ a.texto-vinculo-readme:visited {
 }
 
 /* Hide the items when the select box is closed: */
-.select-hide {
+.dropdown-tipo-busqueda .select-hide {
   display: none;
 }
 
-.select-items div:hover,
-.same-as-selected {
+.dropdown-tipo-busqueda .select-items div:hover,
+.dropdown-tipo-busqueda .same-as-selected {
   background-color: var(--dr-tp-busq1);
   color: white !important;
 }
@@ -148,7 +154,10 @@ a.texto-vinculo-readme:visited {
   font-family: "Fira Sans", sans-serif;
   font-size: 0.8888rem;
   flex-basis: 19%;
+  flex-grow: 1;
   margin-right: 0.5rem;
+  margin-top: 0.2222rem;
+  margin-bottom: 0.2222rem;
 }
 .dropdow-parametros-palabras:focus {
   outline: 3px solid #009d9375;
@@ -224,7 +233,10 @@ a.texto-vinculo-readme:visited {
   font-family: "Fira Sans", sans-serif;
   font-size: 0.8888rem;
   flex-basis: 12%;
+  flex-grow: 1;
   margin-right: 0.5rem;
+  margin-top: 0.2222rem;
+  margin-bottom: 0.2222rem;
 }
 .dropdown-opcion-filtro:focus {
   outline: 3px solid #009d9375;
@@ -298,14 +310,17 @@ a.texto-vinculo-readme:visited {
 
 .input-caja-busqueda-lexico {
   align-self: stretch;
+  min-height: 2.5rem;
   flex-basis: 50%;
   flex: 1;
+  flex-grow: 20;
   padding: 0 0.5rem;
   margin: 0;
   border: none;
   font-size: 0.8888rem;
   font-weight: 500;
-  height: 100%;
+  /* min-height: 2.5rem; */
+  /* max-height: 5rem; */
 }
 .input-caja-busqueda-lexico:focus {
   outline: none;
@@ -333,7 +348,7 @@ a.texto-vinculo-readme:visited {
 /* Contenedor general de checboxes de lexicos */
 .contenedor-general-opciones-busqueda {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-end;
   align-items: flex-start;
   margin-bottom: 2rem;
@@ -341,8 +356,8 @@ a.texto-vinculo-readme:visited {
 /* Contenedor de checkboxes y etiquetas */
 
 .contenedor-general-opciones-busqueda .contenedor-checkbox-custom {
-  margin-right: 0.75rem;
-  margin-left: 0 !important;
+  margin-left: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 .contenedor-general-opciones-busqueda .contenedor-checkbox-custom:last-of-type {
   margin-right: 0rem;

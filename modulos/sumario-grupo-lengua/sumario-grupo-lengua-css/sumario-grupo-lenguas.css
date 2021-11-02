@@ -347,6 +347,7 @@ div.boton-cerrar {
 .cerrar:hover {
   color: var(--interface0) !important;
   font-weight: 500;
+  background: none;
 }
 /* Contenedor de titulo para pantalla emergente */
 .contenedor-titulo-pantalla-emergente {

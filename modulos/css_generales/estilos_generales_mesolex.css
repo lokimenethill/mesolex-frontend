@@ -74,6 +74,7 @@
   --about: #729f36;
   --help: #72447b;
   --credits: #353584;
+  --terms: #da3279;
   /*===========Dropdowns===============*/
   --dr-tp-busq0: #ac2864;
   --dr-tp-busq1: #da3279;
@@ -483,16 +484,18 @@ input[type="checkbox"]:checked + label {
               </label> */
 /* Customize the label (the contenedor-checkbox-custom) */
 .contenedor-checkbox-custom {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   position: relative;
-  padding: 0.25rem 0.25rem 0.25rem 1.1rem !important; /* para evadir el cuadro de seleccion*/
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem !important; /* para evadir el cuadro de seleccion*/
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  height: 1.2222rem;
-  margin: 0 0.25rem;
+  /* height: calc(1.2222rem * 2); */
+  margin: 0;
 }
 
 /* Hide the browser's default checkbox */
@@ -507,9 +510,10 @@ input[type="checkbox"]:checked + label {
 
 /* Create a custom checkbox */
 .cuadro-check {
-  position: absolute;
-  top: 0.1667rem;
-  left: 0;
+  /* position: absolute;
+  top: 0.55rem; */
+  /* top: 0.1667rem; */
+  /* left: 0; */
   height: 0.8888rem;
   width: 0.8888rem;
   border: 1.5px solid var(--interface1);
@@ -552,10 +556,11 @@ input[type="checkbox"]:checked + label {
 .etiqueta-checkbox {
   font-family: "Fira Sans", sans-serif;
   font-size: 0.7777rem;
-  line-height: 0.7777rem;
+  line-height: 100%;
   font-weight: 400;
   color: var(--gris1);
   display: block;
+  margin-left: 0.3rem;
 }
 .etiqueta-checkbox:hover {
   color: var(--interface0);

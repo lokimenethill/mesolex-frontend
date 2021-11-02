@@ -32,7 +32,7 @@
   <!-- Estilos generales css -->
   <link rel="stylesheet" href="../css_generales/estilos_generales_mesolex.css" />
   <!-- ESTILOS DE PANTALLA INDIVIDUAL -->
-  <link rel="stylesheet" href="lexicon-css/lexicon.css" />
+  <link rel="stylesheet" href="lexicon-mixtec-plants-css/lexicon-mixtec-plants.css" />
 
   <title>{Lexicon} | MESOLEX</title>
 </head>
@@ -64,7 +64,7 @@
           <p class="breadcums">/</p><a href="" class="breadcums-activo">Mixtec</a>
         </div>
         <h6>Lexicon</h6>
-        <h1>Nahuat of the Sierra Nororiental de Puebla</h1>
+        <h1>Mixtec plants</h1>
 
         <div class="contenedor-elementos-notas-lexico">
           <a href="#" class="icono-vinculo-readme ">
@@ -80,58 +80,71 @@
           <form action="">
             <div class="caja-busqueda-lexico">
               <!-- Selector personalizado https://www.w3schools.com/howto/howto_custom_select.asp -->
+              <!-- Checar por qué se elimina la primera opción -->
               <div class="dropdown-tipo-busqueda ">
                 <select>
-                  <option value="Headword" selected>Headword</option>
-                  <option value="Gloss">Gloss</option>
-                  <option value="Root">Root</option>
-                  <option value="Semantic field">Semantic field</option>
-                  <option value="Grammatical category">Grammatical category</option>
-                  <option value="Inflection">Inflection</option>
-                  <option value="Exact meaning">Exact meaning</option>
-                  <option value="Extended meaning">Extended meaning</option>
-                  <option value="Illustrative phrases">Illustrative phrases</option>
-                  <option value="Full search">Full search</option>
+                  <option value="Family">Family</option>
+                  <option value="Genus">Genus</option>
+                  <option value="Root">Genus species</option>
+                  <option value="Collect number">Collect number</option>
+                  <option value="Plant name">Plant name</option>
+                  <option value="Plant gloss">Plant gloss</option>
+                  <option value="Community">Community</option>
+                  <option value="Field recording summary AND Descripción">Field recording summary AND Description
+                  </option>
                 </select>
               </div>
+
               <div class="dropdow-parametros-palabras">
                 <select>
-                  <option value="begins with" selected>begins with</option>
+                  <option value="begins with">begins with</option>
                   <option value="ends with">ends with</option>
                   <option value="contains sequence">contains sequence</option>
                   <option value="contains word">contains word</option>
                   <option value="exactly equals">exactly equals</option>
                   <option value="regular expression">regular expression</option>
+                  <option value="regular expression">text search</option>
 
                 </select>
               </div>
+
+
               <input type="search" placeholder="Type words for search" class="input-caja-busqueda-lexico">
             </div>
             <div class="contenedor-general-opciones-busqueda">
               <!-- Checkbox Neutralize vowel length -->
 
-              <label class="contenedor-checkbox-custom ">
+              <label class="contenedor-checkbox-custom" title="Activate flexible orthography">
+                <!--Solo se muestra al seleccionar "Plant name" en el dropdown-->
                 <input type="checkbox">
                 <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Activate flexible orthography</span>
+                <span class="etiqueta-checkbox">Flexible&NonBreakingSpace;orthography</span>
               </label>
               <!-- Checkbox bilingue -->
-              <label class="contenedor-checkbox-custom ">
+              <label class="contenedor-checkbox-custom " title="Activate bilingual search">
                 <input type="checkbox">
                 <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Activate bilingual search</span>
+                <span class="etiqueta-checkbox">Bilingual&NonBreakingSpace;search</span>
               </label>
               <!-- Checkbox Tesauro -->
-              <label class="contenedor-checkbox-custom ">
+              <!--Solo se muestra al seleccionar "Plant gloss y/o Field recording summary AND Description" en el dropdown-->
+              <label class="contenedor-checkbox-custom" title="Activate thesaurus">
                 <input type="checkbox">
                 <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Activate tesaurus</span>
+                <span class="etiqueta-checkbox">Thesaurus</span>
+              </label>
+              <!-- Checkbox Tesauro Taxonómico-->
+              <!--Solo se muestra al seleccionar "Genus-species" en el dropdown-->
+              <label class="contenedor-checkbox-custom" title="Activate taxonomic thesaurus">
+                <input type="checkbox">
+                <span class="cuadro-check" title=""></span>
+                <span class="etiqueta-checkbox">Taxonomic&NonBreakingSpace;thesaurus</span>
               </label>
               <!-- Checkbox solo sonidos -->
-              <label class="contenedor-checkbox-custom ">
+              <label class="contenedor-checkbox-custom " title="Only display inputs with sound">
                 <input type="checkbox">
                 <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Only display inputs with sound</span>
+                <span class="etiqueta-checkbox">Only display inputs&NonBreakingSpace;with&NonBreakingSpace;sound</span>
               </label>
 
             </div>
@@ -151,7 +164,7 @@
               <!-- Selector personalizado https://www.w3schools.com/howto/howto_custom_select.asp -->
               <div class="dropdown-opcion-filtro ">
                 <select>
-                  <option value="and" selected>and</option>
+                  <option value="and">and</option>
                   <option value="or">or</option>
                   <option value="and not">and not</option>
                   <option value="or not">or not</option>
@@ -163,7 +176,7 @@
 
               <div class="dropdown-tipo-busqueda ">
                 <select>
-                  <option value="Headword" selected>Headword</option>
+                  <option value="Headword">Headword</option>
                   <option value="Gloss">Gloss</option>
                   <option value="Root">Root</option>
                   <option value="Semantic field">Semantic field</option>
@@ -177,7 +190,7 @@
               </div>
               <div class="dropdow-parametros-palabras">
                 <select>
-                  <option value="begins with" selected>begins with</option>
+                  <option value="begins with">begins with</option>
                   <option value="ends with">ends with</option>
                   <option value="contains sequence">contains sequence</option>
                   <option value="contains word">contains word</option>
@@ -193,28 +206,35 @@
             <div class="contenedor-general-opciones-busqueda">
               <!-- Checkbox Neutralize vowel length -->
 
-              <label class="contenedor-checkbox-custom ">
+              <label class="contenedor-checkbox-custom" title="Activate flexible orthography">
+                <!--Solo se activa cuando -->
                 <input type="checkbox">
                 <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Activate flexible orthography</span>
+                <span class="etiqueta-checkbox">Flexible&NonBreakingSpace;orthography</span>
               </label>
               <!-- Checkbox bilingue -->
-              <label class="contenedor-checkbox-custom ">
+              <label class="contenedor-checkbox-custom " title="Activate bilingual search">
                 <input type="checkbox">
                 <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Activate bilingual search</span>
+                <span class="etiqueta-checkbox">Bilingual&NonBreakingSpace;search</span>
               </label>
               <!-- Checkbox Tesauro -->
-              <label class="contenedor-checkbox-custom ">
+              <label class="contenedor-checkbox-custom" title="Activate thesaurus">
                 <input type="checkbox">
                 <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Activate tesaurus</span>
+                <span class="etiqueta-checkbox">Thesaurus</span>
+              </label>
+              <!-- Checkbox Tesauro Taxonómico-->
+              <label class="contenedor-checkbox-custom" title="Activate taxonomic thesaurus">
+                <input type="checkbox">
+                <span class="cuadro-check" title=""></span>
+                <span class="etiqueta-checkbox">Taxonomic&NonBreakingSpace;thesaurus</span>
               </label>
               <!-- Checkbox solo sonidos -->
-              <label class="contenedor-checkbox-custom ">
+              <label class="contenedor-checkbox-custom " title="Only display inputs with sound">
                 <input type="checkbox">
                 <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Only display inputs with sound</span>
+                <span class="etiqueta-checkbox">Only display inputs&NonBreakingSpace;with&NonBreakingSpace;sound</span>
               </label>
 
             </div>
