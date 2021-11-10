@@ -1,3 +1,6 @@
+#titulo-lexico-mixteco {
+  color: var(--mixteco0) !important;
+}
 .contenedor-elementos-notas-lexico {
   height: 1.5rem;
   max-width: 100%;
@@ -378,7 +381,7 @@ a.texto-vinculo-readme:visited {
 
 button.eliminar-filtro {
   align-self: stretch;
-  flex-basis: 2rem;
+  flex-basis: 2.2rem;
   aspect-ratio: 1/1;
   color: var(--interface1);
   padding: 0;
@@ -393,8 +396,232 @@ button.eliminar-filtro:hover {
   background-color: var(--interface0);
   border-color: var(--interface0);
 }
+#btn-eliminar-filtro-mixteco {
+  color: var(--mixteco0) !important;
+  border: 2px solid var(--mixteco0) !important;
+}
+#btn-eliminar-filtro-mixteco:hover {
+  color: white !important;
+  background-color: var(--mixteco1) !important;
+  border-color: var(--mixteco1) !important;
+}
+#btn-search-lexico-mixteco {
+  background-color: var(--mixteco0) !important;
+}
+#btn-search-lexico-mixteco:hover {
+  background-color: var(--mixteco1) !important;
+}
+#btn-reset-lexico-buscador-mixteco,
+#btn-adfilter-mixteco {
+  border-color: var(--mixteco0) !important;
+  color: var(--mixteco0) !important;
+}
+#btn-reset-lexico-buscador-mixteco:hover,
+#btn-adfilter-mixteco:hover {
+  color: white !important;
+  background-color: var(--mixteco1) !important;
+  border-color: var(--mixteco1) !important;
+}
 
 /* RESULTADOS */
 .contenedor-general-resultados {
   margin-top: 4rem;
+}
+.instrucciones {
+}
+.tarjeta {
+  margin-bottom: 4rem;
+}
+.tarjeta:first-of-type {
+  margin-top: 1rem;
+}
+.header-tarjeta {
+}
+.contenedor-header-resultado {
+  border-bottom: 2px solid var(--mixteco0);
+  margin-bottom: 0.5rem;
+}
+.titulo-header-tarjeta {
+  margin-top: 0.3333rem !important;
+  margin-bottom: 0.3333rem !important;
+}
+.genero {
+  font-style: italic !important;
+  margin-right: 0.2rem;
+}
+.especie {
+  font-style: italic !important;
+  margin-right: 0.2rem;
+}
+.autor {
+  font-size: 1.77rem;
+  font-weight: 400;
+  color: var(--gris1);
+  margin-right: 0.2rem;
+}
+.familia {
+  font-size: 1.77rem;
+  font-weight: 400;
+  margin-right: 0.2rem;
+  color: var(--gris1);
+}
+/* .familia::before {
+  content: "[ ";
+}
+.familia::after {
+  content: " ]";
+} */
+
+.contenedor-colecta-datos {
+}
+.etiqueta-colecta {
+  font-size: 0.77rem;
+  font-weight: 400;
+  margin-top: 0 !important;
+  margin-bottom: 0.77rem !important;
+  color: var(--gris1);
+}
+.colecta {
+  font-weight: 600;
+}
+.contenedor-datos-comunidad {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.main-tarjeta {
+}
+
+.etiqueta-comunidad {
+  font-size: 0.77rem;
+  font-weight: 400;
+  margin-top: 0 !important;
+  margin-bottom: 0.22rem !important;
+  color: var(--gris1);
+}
+.comunidad {
+  margin-top: 0rem !important;
+  display: inline-block;
+  margin-right: 0.777rem;
+  font-weight: 600;
+}
+.btn-play-small {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  padding: 0 !important;
+  padding-top: 1px !important; /*Compensa posición de icono de play*/
+}
+.btn-play-small-mixteco {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  padding: 0 !important;
+  padding-top: 1px !important; /*Compensa posición de icono de play*/
+  background-color: var(--mixteco0) !important;
+}
+.btn-play-small-mixteco:hover {
+  background-color: var(--mixteco1) !important;
+}
+.icono-play-boton {
+}
+.contenedor-glosas-y-nombre-plantas-mixteco {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-bottom: 1.5rem !important;
+}
+.contenedor-grupo-glosas-y-nombres {
+  /* min-width: 16.66%;
+  max-width: calc(33.33% - 1rem); */
+  flex-basis: calc(33.33% - 1rem);
+  margin-right: 1rem;
+  margin-left: 1rem;
+  flex-grow: 1;
+  /* Para compensar los textos por bloques:  */
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.contenedor-grupo-glosas-y-nombres:nth-of-type(1) {
+  margin-left: 0rem;
+
+  justify-content: flex-start !important;
+}
+.contenedor-grupo-glosas-y-nombres:nth-of-type(2) {
+  justify-content: center !important;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.contenedor-grupo-glosas-y-nombres:nth-of-type(3) {
+  margin-right: 0;
+  justify-content: flex-end !important;
+}
+.contenedor-grupo-glosas-y-nombres:last-of-type {
+  margin-right: 0;
+}
+.contenedor-grupo-glosas-y-nombres:first-of-type {
+  margin-left: 0;
+}
+
+.etiqueta-num-glosa {
+  font-size: 0.77rem;
+  margin-bottom: 0.22rem !important;
+  color: var(--gris1);
+}
+.nombre-planta {
+  color: var(--negro);
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+}
+.glossa-planta {
+  color: var(--mixteco0);
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem;
+  font-style: italic;
+}
+.contenedor-sumarios-y-comentarios {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.fila-sumario-comentarios {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.col-etiqueta {
+  min-width: calc(33.333% - 0.5rem);
+  flex-basis: calc(33.333% - 0.5rem);
+
+  margin-right: 0.5rem;
+}
+.etiqueta-comentarios {
+  text-align: right;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.etiqueta-uid-grabacion {
+  font-size: 0.77rem;
+  color: var(--gris2);
+  text-align: right;
+  margin-top: 0;
+}
+.uid-grabacion {
+  font-weight: 500;
+}
+.col-dato {
+  min-width: calc(66.6666% - 0.5rem);
+  flex-basis: calc(66.6666% - 0.5rem);
+  margin-left: 0.5rem;
+}
+.comentarios {
+  color: var(--negro);
+  font-size: 0.8888rem;
+}
+
+.footer-tarjeta {
 }

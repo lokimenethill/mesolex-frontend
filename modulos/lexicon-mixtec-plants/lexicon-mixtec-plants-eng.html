@@ -64,7 +64,7 @@
           <p class="breadcums">/</p><a href="" class="breadcums-activo">Mixtec</a>
         </div>
         <h6>Lexicon</h6>
-        <h1>Mixtec plants</h1>
+        <h1 id="titulo-lexico-mixteco">Mixtec plants</h1>
 
         <div class="contenedor-elementos-notas-lexico">
           <a href="#" class="icono-vinculo-readme ">
@@ -200,7 +200,7 @@
               </div>
               <input type="search" placeholder="Type words for search" class="input-caja-busqueda-lexico">
               <!-- Botón eliminar filtro -->
-              <button class="eliminar-filtro">x</button>
+              <button class="eliminar-filtro" id="btn-eliminar-filtro-mixteco">x</button>
             </div>
             <div class="contenedor-general-opciones-busqueda">
               <!-- Checkbox Neutralize vowel length -->
@@ -239,12 +239,12 @@
             </div>
             <div class="contenedor-general-botones-busqueda ">
               <div class="contenedor-botones-izquierda ">
-                <button id="adfilter" class="btn-secundario">Add filter</button>
+                <button id="btn-adfilter-mixteco" class="btn-secundario">Add filter</button>
               </div>
               <div class="contenedor-botones-derecha  ">
-                <button type="reset" id="reset-lexico-buscador" class="btn-secundario">Reset</button>
+                <button type="reset" id="btn-reset-lexico-buscador-mixteco" class="btn-secundario">Reset</button>
 
-                <button type="submit" id="search-lexico">Search</button>
+                <button type="submit" id="btn-search-lexico-mixteco">Search</button>
               </div>
             </div>
           </form>
@@ -252,197 +252,293 @@
         <div class="contenedor-general-resultados">
           <h4 class="instrucciones">{#} results. (Page {#} de {#})</h4>
 
-          <div class="contenedor-resultado-item">
-            <div class="cabecera-resultado">
-              <h2 class="palabra-resultado"><span>a:chi:petik</span></h2>
-              <div role="group" tabindex="0" aria-label="Audio Player" class="rhap_container "
-                style="display: inline-block; margin: 0px 1em;">
-                <audio src="http://www.balsas-nahuatl.org/Mesolex/Headwords_mp3/00001-01000/00016_Xaltn_ADA300.mp3"
-                  preload="auto">
-                </audio>
-                <div class="rhap_main rhap_stacked">
-                  <div class="rhap_progress-section">
+          <div class="contenedor-general-tarjetas">
+            <article class="tarjeta">
+              <section class="header-tarjeta">
+                <div class="contenedor-header-resultado">
+                  <h2 class="titulo-header-tarjeta">
+                    <span class="genero">Elytraria</span>
+                    <span class="especie">imbricata</span>
+                    <span class="autor">(Vahl) Pers.</span>
+                    <span class="familia">Acanthaceae</span>
+                  </h2>
+                </div>
+                <div class="contenedor-colecta-datos">
+                  <p class="etiqueta-colecta">Collect:
+                    <span class="colecta">40807</span>
+                  </p>
+                </div>
+              </section>
+              <section class="main-tarjeta">
+                <div class="contenedor-datos-comunidad">
+                  <p class="etiqueta-comunidad">Community:</p>
+                  <h3 class="comunidad">Yoloxóchitl </h3><audio src=""></audio><button
+                    class="btn-play-small-mixteco"><span class="material-icons icono-play-boton">
+                      play_arrow
+                    </span></button>
+                  <div class="contenedor-glosas-y-nombre-plantas-mixteco ">
+                    <div class="contenedor-grupo-glosas-y-nombres  ">
+                      <div class="contenedor-glosa ">
+                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+                        <p class="nombre-planta">ndu³ku² si'¹ba¹ ñu’³u⁴</p>
+                        <p class="glossa-planta">vara cacao tierra</p>
+                      </div>
+                    </div>
+                    <div class="contenedor-grupo-glosas-y-nombres  ">
+                      <div class="contenedor-glosa ">
+                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+                        <p class="nombre-planta">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
+                          incidunt,
+                          atque accusantium fuga in praesentium.</p>
+                        <p class="glossa-planta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga error
+                          laboriosam quibusdam est, tenetur nemo.</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="rhap_controls-section">
-                    <div class="rhap_main-controls">
-                      <button aria-label="Play"
-                        class="rhap_button-clear rhap_main-controls-button rhap_play-pause-button" type="button"><span
-                          class="material-icons">
-                          play_arrow
-                        </span>
-                      </button>
+                  <div class="contenedor-sumarios-y-comentarios">
+                    <div class="fila-sumario-comentarios">
+                      <div class="col-etiqueta">
+                        <p class="etiqueta-comentarios">Comments:</p>
+                        <p class="etiqueta-uid-grabacion">UID:<span class="uid-grabacion">2017-11-28-b</span></p>
+                      </div>
+                      <div class="col-dato">
+                        <p class="comentarios">Fernando Niño dice que el nombre de la planta es ndu³ku2 si’1ba1 ñu’³u⁴
+                          ('vara cacao tierra'). No tiene ningún uso, sus flores son moradas. Constantino Teodoro
+                          Bautista, dice que su raíz huele a cacao si se frota y por eso se le llama ndu³ku2 si’1ba1.
+                          Sus
+                          flores son moradas y muy bonitas, pero son pequeñas y no sirven para llevar al panteón.
+                          Esteban
+                          Guadalupe Sierra también dice que el nombre de la planta es ndu³ku2 si’1ba1. Comenta que ni
+                          sus
+                          flores ni las ramas tiene uso. La planta se la comen los chivos. Sus flores son pequeñas y
+                          moradas.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="cabecera-resultados-secundarios">
-                <p>
-                  <i>Citación:</i><span>a:chi:petik</span>, <i>Glosa:
-                  </i><span>de.color.bajo</span>&nbsp;|&nbsp;<i>Categoría gramatical:
-                  </i><span>Adj</span>&nbsp;|&nbsp;<i>Campo semántico: </i><span>Color</span>
-                </p>
-              </div>
+              </section>
+              <section class="footer-tarjeta">
+              </section>
+            </article>
+            <article class="tarjeta">
+              <section class="header-tarjeta">
+                <div class="contenedor-header-resultado">
+                  <h2 class="titulo-header-tarjeta">
+                    <span class="genero">Tabebuia</span>
+                    <span class="especie">rosea</span>
+                    <span class="autor">(Bertol.) Pers.</span>
+                    <span class="familia">Bignoniaceae</span>
+                  </h2>
+                </div>
+                <div class="contenedor-colecta-datos">
+                  <p class="etiqueta-colecta">Collect:
+                    <span class="colecta">1903</span>
+                  </p>
+                </div>
+              </section>
+              <section class="main-tarjeta">
+                <div class="contenedor-datos-comunidad">
+                  <p class="etiqueta-comunidad">Community:</p>
+                  <h3 class="comunidad">Yoloxóchitl </h3><audio src=""></audio><button
+                    class="btn-play-small-mixteco"><span class="material-icons icono-play-boton">
+                      play_arrow
+                    </span></button>
+                  <div class="contenedor-glosas-y-nombre-plantas-mixteco">
+                    <div class="contenedor-grupo-glosas-y-nombres  ">
+                      <div class="contenedor-glosa ">
+                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+                        <p class="nombre-planta">tun⁴ to¹ko⁴o²⁴ kwa'⁴a¹</p>
+                        <p class="glossa-planta">árbol roble rojo</p>
+                      </div>
+                    </div>
+                    <div class="contenedor-grupo-glosas-y-nombres  ">
+                      <div class="contenedor-glosa ">
+                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+                        <p class="nombre-planta">tun⁴ to¹ko⁴o²⁴ nde'³e⁴</p>
+                        <p class="glossa-planta">árbol roble morado</p>
+                      </div>
+                    </div>
+                    <div class="contenedor-grupo-glosas-y-nombres ">
+                      <div class="contenedor-glosa ">
+                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+                        <p class="nombre-planta">tun⁴ to¹ko⁴o²⁴ ndi¹⁴i²</p>
+                        <p class="glossa-planta">árbol roble rosa</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contenedor-sumarios-y-comentarios">
+                    <div class="fila-sumario-comentarios">
+                      <div class="col-etiqueta">
+                        <p class="etiqueta-comentarios">Comments:</p>
+                        <p class="etiqueta-uid-grabacion">UID:2015-09-25-a</p>
+                      </div>
+                      <div class="col-dato">
+                        <p class="comentarios">Lorem ipsum dolor sit amet consectetur adipisicing elit. In reprehenderit
+                          soluta nihil dolore, natus ducimus quod consectetur ipsum! Consectetur, delectus fugit?
+                          Eveniet
+                          corporis fugit doloribus eos repudiandae reiciendis nisi a!
+                          Praesentium similique a asperiores non earum odit, quidem nesciunt rem quia omnis sapiente
+                          nihil
+                          perspiciatis eum obcaecati laborum dolorem nulla quisquam tenetur voluptate eaque voluptatum?
+                          Sunt porro optio corrupti illo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="footer-tarjeta">
+              </section>
+            </article>
+            <article class="tarjeta">
+              <section class="header-tarjeta">
+                <div class="contenedor-header-resultado">
+                  <h2 class="titulo-header-tarjeta">
+                    <span class="genero">Genus</span>
+                    <span class="especie">specie</span>
+                    <span class="autor">Author</span>
+                    <span class="familia">Family</span>
+                  </h2>
+                </div>
+                <div class="contenedor-colecta-datos">
+                  <p class="etiqueta-colecta">Collect:
+                    <span class="colecta">1903</span>
+                  </p>
+                </div>
+              </section>
+              <section class="main-tarjeta">
+                <div class="contenedor-datos-comunidad">
+                  <p class="etiqueta-comunidad">Community:</p>
+                  <h3 class="comunidad">Yoloxóchitl </h3><audio src=""></audio><button
+                    class="btn-play-small-mixteco"><span class="material-icons icono-play-boton">
+                      play_arrow
+                    </span></button>
+                  <div class="contenedor-glosas-y-nombre-plantas-mixteco">
+                    <div class="contenedor-grupo-glosas-y-nombres  ">
+                      <div class="contenedor-glosa ">
+                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+                        <p class="nombre-planta">tun⁴ to¹ko⁴o²⁴ kwa'⁴a¹</p>
+                        <p class="glossa-planta">árbol roble rojo</p>
+                      </div>
+                    </div>
+                    <div class="contenedor-grupo-glosas-y-nombres  ">
+                      <div class="contenedor-glosa ">
+                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+                        <p class="nombre-planta">tun⁴ to¹ko⁴o²⁴ nde'³e⁴</p>
+                        <p class="glossa-planta">árbol roble morado</p>
+                      </div>
+                    </div>
+                    <div class="contenedor-grupo-glosas-y-nombres ">
+                      <div class="contenedor-glosa ">
+                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+                        <p class="nombre-planta">tun⁴ to¹ko⁴o²⁴ ndi¹⁴i²</p>
+                        <p class="glossa-planta">árbol roble rosa</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contenedor-sumarios-y-comentarios">
+                    <div class="fila-sumario-comentarios">
+                      <div class="col-etiqueta">
+                        <p class="etiqueta-comentarios">Comments:</p>
+                        <p class="etiqueta-uid-grabacion">UID:2015-09-25-a</p>
+                      </div>
+                      <div class="col-dato">
+                        <p class="comentarios">Lorem ipsum dolor sit amet consectetur adipisicing elit. In reprehenderit
+                          soluta nihil dolore, natus ducimus quod consectetur ipsum! Consectetur, delectus fugit?
+                          Eveniet
+                          corporis fugit doloribus eos repudiandae reiciendis nisi a!
+                          Praesentium similique a asperiores non earum odit, quidem nesciunt rem quia omnis sapiente
+                          nihil
+                          perspiciatis eum obcaecati laborum dolorem nulla quisquam tenetur voluptate eaque voluptatum?
+                          Sunt porro optio corrupti illo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contenedor-datos-comunidad">
+                  <p class="etiqueta-comunidad">Community:</p>
+                  <h3 class="comunidad">Buena Vista </h3><audio src=""></audio><button
+                    class="btn-play-small-mixteco"><span class="material-icons icono-play-boton">
+                      play_arrow
+                    </span></button>
+                  <div class="contenedor-glosas-y-nombre-plantas-mixteco">
+                    <div class="contenedor-grupo-glosas-y-nombres  ">
+                      <div class="contenedor-glosa ">
+                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+                        <p class="nombre-planta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                          quibusdam?</p>
+                        <p class="glossa-planta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                          corrupti reiciendis beatae reprehenderit.</p>
+                      </div>
+                    </div>
+                    <div class="contenedor-grupo-glosas-y-nombres  ">
+                      <div class="contenedor-glosa ">
+                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+                        <p class="nombre-planta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+                          adipisci?</p>
+                        <p class="glossa-planta">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+                          animi quis corporis.</p>
+                      </div>
+                    </div>
+                    <div class="contenedor-grupo-glosas-y-nombres ">
+                      <div class="contenedor-glosa ">
+                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+                        <p class="nombre-planta">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="glossa-planta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contenedor-sumarios-y-comentarios">
+                    <div class="fila-sumario-comentarios">
+                      <div class="col-etiqueta">
+                        <p class="etiqueta-comentarios">Comments:</p>
+                        <p class="etiqueta-uid-grabacion">UID:2015-09-25-a</p>
+                      </div>
+                      <div class="col-dato">
+                        <p class="comentarios">Lorem ipsum dolor sit amet consectetur adipisicing elit. In reprehenderit
+                          soluta nihil dolore, natus ducimus quod consectetur ipsum! Consectetur, delectus fugit?
+                          Eveniet
+                          corporis fugit doloribus eos repudiandae reiciendis nisi a!
+                          Praesentium similique a asperiores non earum odit, quidem nesciunt rem quia omnis sapiente
+                          nihil
+                          perspiciatis eum obcaecati laborum dolorem nulla quisquam tenetur voluptate eaque voluptatum?
+                          Sunt porro optio corrupti illo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="footer-tarjeta">
+              </section>
+            </article>
+          </div>
+          <div class="contenedor-paginacion ">
+            <div class="contenedor-por-pagina ">
+              <button class="btn-pagina-anterior"><span class="material-icons-outlined">
+                  arrow_back_ios
+                </span></button>
+              <button class="btn-pagina">1</button>
+              <button class="btn-pagina">2</button>
+              <button class="btn-pagina">3</button>
+              <button class="btn-pagina">4</button>
+              <button class="btn-pagina">5</button>
+              <button class="btn-pagina">6</button>
+              <button class="btn-pagina">7</button>
+              <button class="btn-pagina">8</button>
+              <button class="btn-pagina">9</button>
+              <button class="btn-pagina">10</button>
+              <button class="btn-pagina-siguiente"><span class="material-icons-round">
+                  arrow_forward_ios
+                </span></button>
             </div>
-            <div class="card-body">
-              <ol class="search-results-list">
-                <li>
-                  <p class="card-text">
-                  <p><span>de color bajo, no fuerte (particularmente flores, pero también cosas como telas)</span></p>
-                  </p>
-                  <blockquote class="card-text example font-weight-light">
-                    <p><span>Kita:lia n' i:n kowtanepano:l ika se: taselo:t mono:tsa chamakih, chamakih ika
-                        tepe:xi:lo:t. Yehwa n' tachihchi:wa n' chamakih, we:weyak ihkó:n mahyá:, <esp>este</esp>, onkak
-                        chi:chi:ltik, kostik, ista:k, xokoyo:ltsi:n, n... a:chi:petik wa:n
-                        xokotik.</span>&nbsp;<i><span>Ponen los palos adornados con la flor de heliconias, heliconias
-                          con hojas de tepexilote. Con eso heliconias adornan (los altares), de hojas largas, este, hay
-                          rojas, amarillas, blancas, un color combinado entre rojo fuerte, café y blanco, hay otro de
-                          color bajo y (otro) verde.</span></i></p>
-                  </blockquote>
-                </li>
-                <li>
-                  <p class="card-text">
-                  <p><span>[col] <vnawa>kostik</vnawa>
-                      <nawa>a:chi:petik</nawa> | [lit., 'amarrillo de.color.bajo'] de color amarillo bajo, no fuerte
-                    </span></p>
-                  </p>
-                  <blockquote class="card-text example font-weight-light">
-                    <p><span>Ke:mah, pos <esp>papaya</esp> onkak miak taman, ke:meh yo:n seki kiliah nehjó:n <esp>papaya
-                        </esp> yo:n tein itahta:i, nehjó:n yeh xo:..., xo:chiowa wa:n ma:..., ma:tohtokotstik mochi:wa,
-                        we:noh, mota:lia itech ko..., kowke:span ixo:chiotsi:n. Wa:n ixo:chiotsi:n achi, a:chi a:kostik,
-                        a:mo semi kostik, a:kostik sah, <esp>medio</esp> pochiktik, pero a:kostik, mah tikihto:ka:n
-                        a:kostik xo:chit, a:mo kostik kwaltsi:n. Kostik a:chi:petik wa:n poso:ni ixo:chiotsi:n
-                        kowke:span wa:n ke:mah mopilowa ya kowtet, mochi:wa pero tsikitsi:n ke:meh xokot
-                        sah.</span>&nbsp;<i><span>Si, pues hay muchas variedades de papaya, como el que le llaman papaya
-                          cimarrón, esta florea y sus ramas no son tan largas, las flores nacen en el tallo. Y sus
-                          flores son un poco descoloridas con tendencia a amarillas, no son muy amarillas, son de color
-                          bajo, amarillas, un poco blanquisas pero una amarilla descolorida, podemos decir que son de
-                          color bajo, no tienen un color amarillo bonito Son descoloridas con tendencia a amarillo y las
-                          flores nacen en el tallo y ahí mismo nace el fruto. El fruto es muy pequeño, como el tamaño de
-                          una naranja.</span></i></p>
-                  </blockquote>
-                </li>
-                <li>
-                  <p class="card-text">
-                  <p><span>[col] <vnawa>chi:chi:ltik</vnawa>
-                      <nawa>a:chi:petik</nawa> | [lit., 'rojo de.color.bajo'] de color rojo bajo, no fuerte
-                    </span></p>
-                  </p>
-                  <blockquote class="card-text example font-weight-light">
-                    <p><span>AND-- ¿Ista:k oso tsih...? JVC-- N' a:kolin ne:n ixo:chio me..., <esp>medio</esp>,
-                        chi:chi:ltik a:chi:petik n' ixo:chio n' a:kolin. Ke:mah, wa:n ne: pané: tiki:xmati yo:n
-                        kinamakah kwesala:n a:ko:lxo:chit, kiliah ata yo:n yo:n kinamakah yo:n achi tepe:wi xo:chit wa:n
-                        olo:chposo:ni ihkwí:n. Yehwa n' ixo:chio, <esp>igualito</esp> yo:n.</span>&nbsp;<i><span>JVC--
-                          ¿Es blanco o ...? AND-- Las flores de ajonjolí son un poco rojos .... JVC-- Son de rojo bajo
-                          las flores de ajonjolí. Sí, y parece que las conocemos como (<nawa>a:ko:lxo:chit</nawa>) esas
-                          flores que venden en Cuetzalan, así les llaman ésas que luego se caen los pétalos y florecen
-                          juntas al mismo tiempo. Esas flores son igualitas.</span></i></p>
-                  </blockquote>
-                </li>
-                <li>
-                  <p class="card-text">
-                  <p><span>[col] <vnawa>ista:k</vnawa>
-                      <nawa>a:chi:petik</nawa> | [lit., 'blanco de.color.bajo'] de color blanco bajo, no fuerte
-                    </span></p>
-                  </p>
-                  <blockquote class="card-text example font-weight-light">
-                    <p><span>AND-- Pos ixo:chio (del <vnawa>ahmolkilit</vnawa>) ne:n nochi ne:n pané: aha:chi:petik.
-                        A:chi:petik, ista:k. A:chi:petik, a:mo semi telchi:chi:ltik. JVC-- Pané: ista:k. Ista:k
-                        a:chi:petik, mo..., kostik, kostik pero a:chi:petik. Ke:mah. Wa:n de pa..., de pawetsi a
-                        xo:chitsi:n, moka:wa ya xoxoktsi:n ne: i..., yo:n i..., kowtetsi:n para moskaltia, ata yo:n
-                        iteyo mahyá: kipia e..., komoke de ehe:yi.</span>&nbsp;<i><span>JVC-- A pues sus flores (del
-                          <sci>Phytolacca rivinoides</sci> Kunth &amp; C.D. Bouché) todas son como de color bajo. Son de
-                          color bajo, blanco, de color bajo, no son muy rojos. AND-- Son como blancas, blancas de color
-                          bajo, se …, son amarillas, amarillas pero de color bajo. Si. Y cuando ya se caen las flores.
-                          ya queda verde lo que será el fruto que ya va a crecer, tiene sus frutos como divididos en
-                          tres.
-                        </span></i></p>
-                  </blockquote>
-                </li>
-                <li>
-                  <p class="card-text">
-                  <p><span>[col] <vnawa>xoxoktik</vnawa>
-                      <nawa>a:chi:petik</nawa> | [lit., 'verde de.color.bajo'] de color verde bajo, no fuerte
-                    </span></p>
-                  </p>
-                  <blockquote class="card-text example font-weight-light">
-                    <p><span>JVC-- Ke:mah, se: kikwa ya tsapot pero neli MJT-- Ke:mah. JVC-- ina:kayo, n' iihtikyo ne:,
-                        ata ne:, achi <esp>medio</esp> kos..., <esp>medio</esp> xohxoxoktik, xoxoktik, xoxoktik
-                        a:chi:petik. MJT-- Ke:mah, tahtaman sah, mahyá: yo:n .... JVC-- Ke:mah, iwkitik, iwkitik ke:meh
-                        yo:n. MJT-- Ke:mah, xoxoktik.\fr_au JVC313</span>&nbsp;<i><span>JVC-- Si, uno ya se come los
-                          zapotes pero es cierto, MJT-- Si. JVC-- la parte carnosa, lo de adentro, pues este es un poco
-                          ama…, bueno es verdoso, es verde, es verde bajo. MJT-- Sí, son raros, se parece a…, JVC-- Si,
-                          se parece, se parece como ése. MJT-- Si, son verdes.</span></i></p>
-                  </blockquote>
-                </li>
-              </ol>
+            <div class="contenedor-ir-a-pagina ">
+              <form action="">
+                <input type="number" placeholder="#"><button type="submit"><span class="material-icons-outlined">
+                    arrow_forward
+                  </span></button>
             </div>
-            <div class="card-footer">
-              <div>
-                <p class="small">
-                  <strong>Notas semánticas: </strong><span>La palabra <nawa>a:chi:petik</nawa> refiere al color bajo,
-                    generalemente de flores pero también de tela o cosas similares. Generalmente son así por naturaleza
-                    no
-                    por haberse bajado de intensidad de color. Cuando algo bajo de color por el tiempo, el sol, el
-                    color,
-                    se utiliza una forma de <vnawa>i:xki:sa</vnawa>. En una búsqueda por el corpus de textos en enero
-                    2018
-                    se encontraron 18 ocurrencias de <nawa>a:chi:petik</nawa> precedido por un color: 12 veces amarrillo
-                    (
-                    <vnawa>kosti</vnawa>), 1 vez verde (<vnawa>xoxoktik</vnawa>) y una vez rojo (<vnawa>chi:chi:ltik
-                    </vnawa>). Aparentemente se pueden formar compuestos de <nawa>a:chi:petik</nawa> con colores pero
-                    hasta la fecha (oct. 2011) solamente se ha manifestado uno: <vnawa>a:chi:pechi:chi:ltik</vnawa>
-                    .
-                  </span>
-                </p>
-              </div>
-              <div>
-                <p class="small">
-                  <strong>Notas semánticas: </strong><span>En una búsqueda por el corpus de textos en octubre 2011 se
-                    encontraron siete ocurrencias de <nawa>a:chi:petik</nawa> precedido por un color: 5 veces amarrillo
-                    (
-                    <vnawa>kosti</vnawa>), 1 vez verde (<vnawa>xoxoktik</vnawa>) y una vez rojo (<vnawa>chi:chi:ltik
-                    </vnawa>). Aparentemente se pueden formar compuestos de <nawa>a:chi:petik</nawa> con colores pero
-                    hasta la fecha (oct. 2011) solamente se ha manifestado uno: <vnawa>a:chi:pechi:chi:ltik</vnawa>
-                    .
-                  </span>
-                </p>
-              </div>
-              <div>
-                <p class="small">
-                  <strong>Notas morfológicas: </strong><span>La etimología es <nawa>a:chi:petik</nawa> no está claro
-                    como no existe <nawa>chi:petik</nawa> ni algo parecido. Hay seis palabras que aparecen en el corpus
-                    hasta la fecha (2018-01-09): <nawa>a:chi:petik</nawa>, <vnawa>a:chi:petia</vnawa>, <vnawa>
-                      a:chi:pechi:chi:ltik</vnawa>
-                    <vnawa>a:chi:pemoradi:toh</vnawa>, <vnawa>chi:chi:la:chi:petik</vnawa> y <vnawa>ma:a:chi:petik
-                    </vnawa>
-                    aunque la forma mucho más común es el adjectivo <nawa>a:chi:petik</nawa> con 107 de 115 ocurrencias.
-                    De las ocurrencias de <nawa>a:chi:petik</nawa> un total de 14 son reduplicados: <nawa>aha:chi:petik
-                    </nawa>. Una vez <nawa>a:chi:petik</nawa> ocurre con <nawa>ye:k-</nawa> como prefijo y una vez
-                    <nawa>
-                      aha:chi:petik</nawa> ocurre así. Es interesante que el orden de la incorporación de colores puede
-                    variar: <vnawa>chi:chi:la:chi:petik</vnawa> y <vnawa>a:chi:pechi:chi:ltik</vnawa>. Pero parece que
-                    es
-                    más común que el color precede. En algunos casos se escribe como dos palabras: <nawa>ista:k
-                      a:chi:petik</nawa> y <nawa>kostik a:chi:petik</nawa>.
-                  </span>
-                </p>
-              </div>
-            </div>
+            </form>
           </div>
 
-          <article class="contenedor-resultado-item">
-            <section class="termino-principal">
-
-              <h2>Resultado palabra</h2><audio></audio><button class="play"></button>
-            </section>
-            <section class="informacion-secundaria-termino-principal"></section>
-            <section class="definiciones"></section>
-
-
-
-
-            <abbr></abbr>
-          </article>
         </div>
       </div>
     </div>

@@ -290,7 +290,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif !important;
 }
 h1:first-of-type,
 h2:first-of-type,
