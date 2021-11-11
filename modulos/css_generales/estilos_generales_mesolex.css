@@ -827,36 +827,45 @@ a.menu-item:hover {
 #selector-leng {
   margin-left: 1px;
 }
-.selector-lenguaje {
+button.selector-lenguaje {
   color: var(--interface1) !important;
-  width: 1.5rem;
   text-align: center;
   font-size: 0.6666rem !important;
   font-weight: 500 !important;
+  background-color: white;
+  padding: 0 0.3rem;
+  margin-right: 0;
+  align-self: stretch;
+  min-width: 1.77rem;
 }
-.selector-lenguaje:hover {
+button.selector-lenguaje:hover {
   color: var(--interface0) !important;
   text-decoration: none;
   font-size: 0.6666rem !important;
   font-weight: 700 !important;
 }
-.selector-lenguaje-activo {
+button.selector-lenguaje-activo {
   /*Esta clase es para que cambie el selector e indique en que posición está (Español o Inglés)*/
   color: var(--interface0) !important;
-  width: 1.5rem;
   text-align: center;
   font-size: 0.75rem;
   font-weight: 800;
   cursor: not-allowed;
+  background-color: white;
+  padding: 0 0.3rem;
+  align-self: stretch;
+  margin-left: 0;
+  min-width: 1.77rem;
 }
-.selector-lenguaje-activo:hover {
+button.selector-lenguaje-activo:hover {
   text-decoration: none;
   font-weight: 800;
   cursor: not-allowed;
 }
 
-.divisor-selector-lenguaje {
-  margin: 0 0.15rem;
+p.divisor-selector-lenguaje {
+  margin: 0 3px;
+  padding: 0;
   color: var(--interface1);
 }
 
