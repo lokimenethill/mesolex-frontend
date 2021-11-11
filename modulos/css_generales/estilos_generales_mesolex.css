@@ -677,6 +677,10 @@ button.btn-pagina-activa:hover {
   cursor: not-allowed;
   text-decoration: none !important;
 }
+button.btn-pagina-activa:focus {
+  outline: none !important;
+  /*ver la posibilidad de deshabilitar el tabindex al estar activo*/
+}
 button.btn-pagina-siguiente {
 }
 .contenedor-ir-a-pagina {
