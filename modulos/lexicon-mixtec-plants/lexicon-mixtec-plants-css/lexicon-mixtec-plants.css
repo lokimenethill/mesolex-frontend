@@ -1,23 +1,19 @@
+/* Particularidad del titulo del lexico */
+
 #titulo-lexico-mixteco {
-  color: var(--mixteco0) !important;
+  color: var(
+    --mixteco0
+  ) !important; /*Color de texto varia dependiendo la lengua*/
 }
+/* Es el contenedor del readme del lexico */
 .contenedor-elementos-notas-lexico {
   height: 1.5rem;
   max-width: 100%;
   display: flex;
   align-items: center;
 }
-/* <div class="contenedor-elementos-notas-lexico e1">
-          <a href="#" class="icono-vinculo-readme e1">
-            <span class="material-icons icono-readme e2">
-              info
-            </span>
-          </a>
-          <a href="#" class="texto-vinculo-readme e2">Readme for more information</a>
-        </div> */
+/* Icono del readme */
 a.icono-vinculo-readme {
-  margin: 0;
-
   margin: 0;
   padding: 0;
 }
@@ -48,11 +44,11 @@ a.texto-vinculo-readme:hover {
 a.texto-vinculo-readme:visited {
   color: currentColor;
 }
-
+/* Contenedor del buscador */
 .contenedor-buscador-general-lexico {
   margin-top: 2rem;
 }
-
+/* Caja de busqueda; contiene dropdowns y caha de texto de busqueda */
 .caja-busqueda-lexico {
   border: 1px solid var(--gris3);
   display: flex;
@@ -309,8 +305,8 @@ a.texto-vinculo-readme:visited {
   background-color: var(--dr-fil-mas1);
   color: white !important;
 }
-/* Caja de texto de busqueda*/
 
+/* Caja de texto de busqueda*/
 .input-caja-busqueda-lexico {
   align-self: stretch;
   min-height: 2.5rem;
@@ -322,8 +318,6 @@ a.texto-vinculo-readme:visited {
   border: none;
   font-size: 0.8888rem;
   font-weight: 500;
-  /* min-height: 2.5rem; */
-  /* max-height: 5rem; */
 }
 .input-caja-busqueda-lexico:focus {
   outline: none;
@@ -348,6 +342,8 @@ a.texto-vinculo-readme:visited {
   font-size: 0.8888rem;
   font-weight: 400 !important;
 }
+/* Contenedor de checkboxes, las checkboxes estan en estilos generales */
+
 /* Contenedor general de checboxes de lexicos */
 .contenedor-general-opciones-busqueda {
   display: flex;
@@ -356,8 +352,8 @@ a.texto-vinculo-readme:visited {
   align-items: flex-start;
   margin-bottom: 2rem;
 }
-/* Contenedor de checkboxes y etiquetas */
 
+/* Contenedor de checkboxes y etiquetas */
 .contenedor-general-opciones-busqueda .contenedor-checkbox-custom {
   margin-left: 0.75rem;
   margin-bottom: 0.5rem;
@@ -378,7 +374,6 @@ a.texto-vinculo-readme:visited {
 }
 
 /* Boton eliminar filtro */
-
 button.eliminar-filtro {
   align-self: stretch;
   flex-basis: 2.2rem;
@@ -428,8 +423,8 @@ button.eliminar-filtro:hover {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
-.instrucciones {
-}
+
+/* Tarjeta de cada resultado */
 .tarjeta {
   margin-bottom: 4rem;
 }
@@ -489,6 +484,7 @@ button.eliminar-filtro:hover {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
+/* Main de tarjeta */
 .main-tarjeta {
 }
 
@@ -508,14 +504,13 @@ button.eliminar-filtro:hover {
 .btn-play-small {
   width: 1.5rem;
   height: 1.5rem;
-
   padding: 0 !important;
   padding-top: 1px !important; /*Compensa posición de icono de play*/
 }
+/* Solo cambia el color y va a variar dependiendo de la lengua o idioma */
 .btn-play-small-mixteco {
   width: 1.5rem;
   height: 1.5rem;
-
   padding: 0 !important;
   padding-top: 1px !important; /*Compensa posición de icono de play*/
   background-color: var(--mixteco0) !important;
@@ -525,6 +520,7 @@ button.eliminar-filtro:hover {
 }
 .icono-play-boton {
 }
+/* Contenedor de glosas en comunidad */
 .contenedor-glosas-y-nombre-plantas-mixteco {
   display: flex;
   flex-flow: row nowrap;
@@ -555,7 +551,6 @@ button.eliminar-filtro:hover {
   margin-right: 1rem;
   margin-left: 1rem;
 }
-
 .contenedor-grupo-glosas-y-nombres:nth-of-type(3) {
   margin-right: 0;
   justify-content: flex-end !important;
@@ -584,6 +579,7 @@ button.eliminar-filtro:hover {
   margin-bottom: 0.25rem;
   font-style: italic;
 }
+/* Son contenedores por columna y filas para textos largos de la tarjeta */
 .contenedor-sumarios-y-comentarios {
   width: 100%;
   margin-bottom: 1rem;
@@ -597,7 +593,6 @@ button.eliminar-filtro:hover {
 .col-etiqueta {
   min-width: calc(33.333% - 0.5rem);
   flex-basis: calc(33.333% - 0.5rem);
-
   margin-right: 0.5rem;
 }
 .etiqueta-comentarios {

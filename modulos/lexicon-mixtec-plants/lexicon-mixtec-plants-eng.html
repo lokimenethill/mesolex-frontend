@@ -103,7 +103,6 @@
                   <option value="exactly equals">exactly equals</option>
                   <option value="regular expression">regular expression</option>
                   <option value="regular expression">text search</option>
-
                 </select>
               </div>
 
@@ -251,12 +250,15 @@
         </div>
         <div class="contenedor-general-resultados">
           <h4 class="instrucciones">{#} results. (Page {#} de {#})</h4>
-
+          <!-- Contenedor de resulatdos, cada tarjeta es un resultado -->
           <div class="contenedor-general-tarjetas">
+            <!-- Cada tarjeta tiene 3 secciones: HEADER, MAIN y FOOTER -->
             <article class="tarjeta">
               <section class="header-tarjeta">
                 <div class="contenedor-header-resultado">
+                  <!--Este sirve para poner el borde de abajo-->
                   <h2 class="titulo-header-tarjeta">
+                    <!--Se llenara con los datos de la API-->
                     <span class="genero">Elytraria</span>
                     <span class="especie">imbricata</span>
                     <span class="autor">(Vahl) Pers.</span>
@@ -269,14 +271,23 @@
                   </p>
                 </div>
               </section>
+              <!-- MAIN DE TARJETA -->
               <section class="main-tarjeta">
+                <!-- Un resultado de tarjeta, puede traer varias comunidades y cada comunidad puede tener un audio -->
                 <div class="contenedor-datos-comunidad">
+                  <!--Agrupa los datos de cada comunidad-->
                   <p class="etiqueta-comunidad">Community:</p>
-                  <h3 class="comunidad">Yoloxóchitl </h3><audio src=""></audio><button
-                    class="btn-play-small-mixteco"><span class="material-icons icono-play-boton">
+                  <h3 class="comunidad">Yoloxóchitl </h3>
+                  <audio src=""></audio>
+                  <!--El audio no supe como manejarlo, tiene que ver con backend-->
+                  <!--Boton de reproduccion-->
+                  <button class="btn-play-small-mixteco">
+                    <span class="material-icons icono-play-boton">
                       play_arrow
                     </span></button>
+                  <!-- Cada comunidad puede tener hasta 3 glosas y nombres de planta -->
                   <div class="contenedor-glosas-y-nombre-plantas-mixteco ">
+                    <!--Agrupa las glosas y nombres de plantas-->
                     <div class="contenedor-grupo-glosas-y-nombres  ">
                       <div class="contenedor-glosa ">
                         <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
@@ -284,9 +295,9 @@
                         <p class="glossa-planta">vara cacao tierra</p>
                       </div>
                     </div>
-                    <div class="contenedor-grupo-glosas-y-nombres  ">
+                    <div class="contenedor-grupo-glosas-y-nombres">
                       <div class="contenedor-glosa ">
-                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+
                         <p class="nombre-planta">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
                           incidunt,
                           atque accusantium fuga in praesentium.</p>
@@ -295,12 +306,16 @@
                       </div>
                     </div>
                   </div>
+                  <!-- Contenedor de comentarios o textos largos son 2 columnas y esta pensado por filas -->
                   <div class="contenedor-sumarios-y-comentarios">
+                    <!-- Inicia una fila -->
                     <div class="fila-sumario-comentarios">
+                      <!-- Columna izquierda -->
                       <div class="col-etiqueta">
                         <p class="etiqueta-comentarios">Comments:</p>
                         <p class="etiqueta-uid-grabacion">UID:<span class="uid-grabacion">2017-11-28-b</span></p>
                       </div>
+                      <!-- Columna derecha -->
                       <div class="col-dato">
                         <p class="comentarios">Fernando Niño dice que el nombre de la planta es ndu³ku2 si’1ba1 ñu’³u⁴
                           ('vara cacao tierra'). No tiene ningún uso, sus flores son moradas. Constantino Teodoro
@@ -317,9 +332,11 @@
                   </div>
                 </div>
               </section>
+              <!-- Footer de tarjeta por el momento no tiene nada, pero para el futuro puede servir -->
               <section class="footer-tarjeta">
               </section>
             </article>
+            <!-- Nuevo resultado -->
             <article class="tarjeta">
               <section class="header-tarjeta">
                 <div class="contenedor-header-resultado">
@@ -511,27 +528,46 @@
               </section>
             </article>
           </div>
+          <!-- Termina contenedor de tarjetas -->
         </div>
+        <!-- Termina contenedor de resultados -->
+        <!-- Inicia contenedor de paginación, esta en ESTILOS GENERALES, ya que este módulo se empleara en varias pantallas -->
         <div class="contenedor-paginacion ">
+          <p class="informacion-resultados-y-paginas">{#} results. {#} pages.</p>
+          <!-- Contenedor de botones y se planea que aparezcan de 10 en 10 y que la pagina activa este en medio. Es decir si esta en la pagina 24 iniciaria en la 19 y terminaria en la 29 -->
           <div class="contenedor-paginacion-por-pagina ">
-            <button class="btn-pagina-anterior"><span class="material-icons-round icono-de-boton-paginacion">
+            <!-- Boton de página anterior -->
+            <button class="btn-pagina-anterior">
+              <!-- Icono boton ágina anterior -->
+              <span class="material-icons-round icono-de-boton-paginacion">
                 arrow_back_ios
-              </span></button>
+              </span>
+            </button>
+            <!-- Botones de paginas -->
             <button class="btn-pagina ">1</button>
             <button class="btn-pagina">2</button>
             <button class="btn-pagina">3</button>
             <button class="btn-pagina">4</button>
+            <!-- btn-pagina-activa es un marcador que indica la página en la que se encuentra -->
             <button class="btn-pagina btn-pagina-activa">5</button>
             <button class="btn-pagina">6</button>
             <button class="btn-pagina">7</button>
             <button class="btn-pagina">8</button>
             <button class="btn-pagina">9</button>
             <button class="btn-pagina">10</button>
-            <button class="btn-pagina-siguiente"><span class="material-icons-round icono-de-boton-paginacion ">
+            <!-- Boton página siguiente -->
+            <button class="btn-pagina-siguiente">
+              <span class="material-icons-round icono-de-boton-paginacion ">
                 arrow_forward_ios
-              </span></button>
+              </span>
+            </button>
           </div>
+          <!-- Termina contenedor de botones por página -->
+
+          <!-- Contenedor de input para navegar directamente a una pagina -->
           <div class="contenedor-ir-a-pagina ">
+            <!-- Creo que es forzoso usar el formulario -->
+
             <form action="" class="formulario-ir-a-pagina">
               <input type="number" min="0" placeholder="Go to page" class="caja-input-ir-a-pagina"><button type="submit"
                 class="btn-ir-a-pagina"><span class="material-icons-outlined icono-ir-a-pagina">
@@ -539,9 +575,7 @@
                 </span></button>
             </form>
           </div>
-
         </div>
-
       </div>
     </div>
     </div>

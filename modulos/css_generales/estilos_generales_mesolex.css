@@ -482,6 +482,7 @@ input[type="checkbox"]:checked + label {
                 <span class="cuadro-check"></span>
                 <span class="etiqueta-checkbox">Only display inputs with sound</span>
               </label> */
+
 /* Customize the label (the contenedor-checkbox-custom) */
 .contenedor-checkbox-custom {
   display: flex;
@@ -506,6 +507,9 @@ input[type="checkbox"]:checked + label {
   height: 0;
   width: 0;
   margin: 0 !important;
+}
+.contenedor-checkbox-custom:focus-within {
+  outline: 3px solid #009d9375 !important; /*Hace que el contenedor de la checkbox sea focusable*/
 }
 
 /* Create a custom checkbox */
@@ -608,13 +612,22 @@ button.btn-secundario:hover {
   background-color: var(--interface0);
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>Botones de paginacion<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>Paginacion<<<<<<<<<<<<<<<<<<<<<<<*/
 .contenedor-paginacion {
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 4rem;
+}
+p.informacion-resultados-y-paginas {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 0.7777rem; /*14 px*/
+  line-height: 100%;
+  margin: 0 1rem 0 0 !important;
+  display: block;
+  justify-self: flex-start !important;
 }
 .contenedor-paginacion-por-pagina {
   margin-right: 2rem;
