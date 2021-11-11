@@ -608,6 +608,105 @@ button.btn-secundario:hover {
   background-color: var(--interface0);
 }
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>Botones de paginacion<<<<<<<<<<<<<<<<<<<<<<<*/
+.contenedor-paginacion {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.contenedor-paginacion-por-pagina {
+  margin-right: 2rem;
+}
+button.btn-pagina-anterior,
+button.btn-pagina-siguiente {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  display: inline-block;
+  padding: 0 !important;
+  margin: 0rem 0.05rem !important;
+  border: 2px solid var(--interface1);
+  overflow: hidden;
+  vertical-align: bottom; /*Compensa una alineacion de elementos no deseada*/
+}
+
+button.btn-pagina-anterior:hover,
+button.btn-pagina-siguiente:hover {
+  border: 1px solid var(--interface0);
+}
+.icono-de-boton-paginacion {
+  font-weight: 800;
+  font-style: normal;
+  font-size: 0.8rem;
+  line-height: 0px !important;
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+button.btn-pagina {
+  min-width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  padding: calc(0.4rem - 2px) 0.4rem !important;
+  background: white !important;
+  color: var(--negro);
+  font-size: 0.7rem;
+  line-height: 100%;
+  font-weight: 400 !important;
+  text-align: center;
+  margin: 0rem 0.05rem !important;
+  border: 2px solid white;
+}
+button.btn-pagina:hover {
+  color: var(--interface0) !important;
+  text-decoration: underline !important;
+}
+button.btn-pagina-activa {
+  border: 2px solid var(--interfacesp);
+  cursor: not-allowed;
+  font-weight: 600 !important;
+  color: var(--interface0) !important;
+  -moz-box-shadow: inset 0 0 1.5px var(--gris1);
+  -webkit-box-shadow: inset 0 0 1.5px var(--gris1);
+  box-shadow: inset 0 0 1.5px var(--gris1);
+}
+button.btn-pagina-activa:hover {
+  cursor: not-allowed;
+  text-decoration: none !important;
+}
+button.btn-pagina-siguiente {
+}
+.contenedor-ir-a-pagina {
+}
+form.formulario-ir-a-pagina {
+}
+.caja-input-ir-a-pagina {
+  height: 1.5rem;
+  border: 1px solid var(--gris3);
+  font-size: 0.7rem;
+  width: 14ch;
+  padding: 0 0.25rem;
+}
+button.btn-ir-a-pagina {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  display: inline-block;
+  padding: 0 !important;
+  margin: 0rem 0.05rem !important;
+  border: 2px solid var(--interface1);
+  overflow: hidden;
+  vertical-align: bottom; /*Compensa una alineacion de elementos no deseada*/
+}
+
+button.btn-ir-a-pagina:hover {
+  border: 2px solid var(--interface0);
+}
+.icono-ir-a-pagina {
+}
+
 /*PARA GLOTOCODE*/
 code {
   font-family: "Fira Sans Condensed", sans-serif;

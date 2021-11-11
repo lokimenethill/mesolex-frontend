@@ -426,6 +426,7 @@ button.eliminar-filtro:hover {
 /* RESULTADOS */
 .contenedor-general-resultados {
   margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .instrucciones {
 }
