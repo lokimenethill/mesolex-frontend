@@ -28,7 +28,7 @@ h3.titulo-modulo {
   color: white;
 }
 p.descripcion-modulo {
-  font-size: 0.86rem;
+  font-size: 0.86rem !important;
   color: white;
 }
 

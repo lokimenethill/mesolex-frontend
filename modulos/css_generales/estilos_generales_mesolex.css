@@ -989,3 +989,57 @@ p.footer-item {
   display: flex;
   align-items: center;
 }
+
+/*------------------------------------------BUSCADOR---------------------------------*/
+.contenedor-buscador-general {
+  margin-top: 2rem;
+}
+/* Caja de busqueda; contiene dropdowns y caja de texto de busqueda */
+.caja-busqueda {
+  border: 1px solid var(--gris3);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0.38rem;
+  margin-bottom: 0.5rem;
+}
+.caja-busqueda:focus-within {
+  outline: 3px solid #009d9375;
+  /* Hace que se enfocque el elemento padre */
+}
+.input-caja-busqueda {
+  align-self: stretch;
+  min-height: 2.5rem;
+  flex-basis: 50%;
+  flex: 1;
+  flex-grow: 20;
+  padding: 0 0.5rem;
+  margin: 0;
+  border: none;
+  font-size: 0.8888rem;
+  font-weight: 500;
+}
+.input-caja-busqueda:focus {
+  outline: none;
+}
+.input-caja-busqueda::placeholder {
+  color: var(--gris3);
+  font-size: 0.8888rem;
+  font-weight: 400 !important;
+}
+.input-caja-busqueda::-webkit-input-placeholder {
+  color: var(--gris3);
+  font-size: 0.8888rem;
+  font-weight: 400 !important;
+}
+.input-caja-busqueda:-ms-input-placeholder {
+  color: var(--gris3);
+  font-size: 0.8888rem;
+  font-weight: 400 !important;
+}
+.input-caja-busqueda::-moz-placeholder {
+  color: var(--gris3);
+  font-size: 0.8888rem;
+  font-weight: 400 !important;
+}

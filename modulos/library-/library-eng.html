@@ -32,9 +32,9 @@
   <!-- Estilos generales css -->
   <link rel="stylesheet" href="../css_generales/estilos_generales_mesolex.css" />
   <!-- ESTILOS DE PANTALLA INDIVIDUAL -->
-  <link rel="stylesheet" href="lexicon-mixtec-plants-css/lexicon-mixtec-plants.css" />
+  <link rel="stylesheet" href="library-css/library.css" />
 
-  <title>{Lexicon} | MESOLEX</title>
+  <title>Library | MESOLEX</title>
 </head>
 
 <body class="">
@@ -60,189 +60,66 @@
   <main class="">
     <div class="contenedor-general-rebasado">
       <div class="contenedor-general">
-        <div class="contenedor-breadcums"><a class="breadcums">Languages index</a>
+        <div class="contenedor-breadcums"><a class="breadcums">Library</a>
           <p class="breadcums">/</p><a href="" class="breadcums-activo">Mixtec</a>
         </div>
-        <h6>Lexicon</h6>
-        <h1 id="titulo-lexico-mixteco">Mixtec plants</h1>
-
-        <div class="contenedor-elementos-notas-lexico">
-          <a href="#" class="icono-vinculo-readme ">
-            <span class="material-icons icono-readme ">
-              info
-            </span>
-          </a>
-          <a href="#" class="texto-vinculo-readme">Readme for more information</a>
-        </div>
+        <h6>Search in</h6>
+        <h1 id="titulo-library">Library</h1>
 
 
-        <div class="contenedor-buscador-general-lexico ">
+
+
+        <div class="contenedor-buscador-general">
           <form action="">
-            <div class="caja-busqueda-lexico">
+            <div class="caja-busqueda">
               <!-- Selector personalizado https://www.w3schools.com/howto/howto_custom_select.asp -->
               <!-- Checar por qué se elimina la primera opción -->
-              <div class="dropdown-tipo-busqueda ">
+              <div class="dropdown-libreria ">
                 <select>
-                  <option value="Family">Family</option>
-                  <option value="Genus">Genus</option>
-                  <option value="Root">Genus species</option>
-                  <option value="Collection number">Collection number</option>
-                  <option value="Plant name">Plant name</option>
-                  <option value="Plant gloss">Plant gloss</option>
-                  <option value="Community">Community</option>
-                  <option value="Field recording summary AND Descripción">Field recording summary AND Comments
+                  <option value="All">All</option>
+                  <option value="San Pedro Amuzgos">San Pedro Amuzgos</option>
+                  <option value="Highland Puebla Nahuat [high1278]">Highland Puebla Nahuat [high1278]</option>
+                  <option value="Nahuatl of Mecayapan, Veracruz [isth1242]">Nahuatl of Mecayapan, Veracruz [isth1242]
                   </option>
+                  <option value="Nahuatl of Tetelcingo, Morelos
+                  [tete1251]">Nahuatl of Tetelcingo, Morelos
+                    [tete1251]</option>
+                  <option value="Nawat (Pipil) of El Salvador [pipi1250]">Nawat (Pipil) of El Salvador [pipi1250]
+                  </option>
+                  <option value="Community">Chol (Mayan): The lexical sources from 1789 to
+                    1935 [chol1282]</option>
+                  <option value="A dictionary of Chuj (Mayan) as spoken in San
+                  Mateo Ixtatán, Guatemala (1964–65) [chuj1250]">Chuj (Mayan), San
+                    Mateo Ixtatán, Guatemala [chuj1250]</option>
+                  <option value="Historical Mixtec (proto-Mixtec)">Historical Mixtec (proto-Mixtec)</option>
+                  <option value="Mixtec of Magdalena Peñascos [magd1235]">Mixtec of Magdalena Peñascos [magd1235]
+                  </option>
+                  <option value="Mixtec of San Martín Duraznos [juxt1235]">Mixtec of San Martín Duraznos [juxt1235]
+                  </option>
+                  <option value="Mixtec of San Martín Peras [juxt1235]">Mixtec of San Martín Peras [juxt1235]</option>
+                  <option value="Mixtec of Xochapan [xoch1238]">Mixtec of Xochapan [xoch1238]</option>
+                  <option value="Mixtec of the Yoloxóchitl community [yolo1241]">Mixtec of the Yoloxóchitl community
+                    [yolo1241]</option>
+                  <option value="Totonac of the municipality of Zongozotla [high1243]">Totonac of the municipality of
+                    Zongozotla [high1243]</option>
+                  <option value="Chicahuaxtla Triqui [chic1273]">Chicahuaxtla Triqui [chic1273]</option>
+                  <option value="San Martín Itunyoso Triqui [sanm1298]">San Martín Itunyoso Triqui [sanm1298]</option>
+                  <br>
+                  <option value="Illustrated guides of flora & fauna">Illustrated guides of flora & fauna</option>
                 </select>
               </div>
-              <div class="dropdow-parametros-palabras">
-                <select>
-                  <option value="begins with">begins with</option>
-                  <option value="ends with">ends with</option>
-                  <option value="contains sequence">contains sequence</option>
-                  <option value="contains word">contains word</option>
-                  <option value="exactly equals">exactly equals</option>
-                  <option value="regular expression">regular expression</option>
-                  <option value="regular expression">text search</option>
-                </select>
-              </div>
-
-
-              <input type="search" placeholder="Type words for search" class="input-caja-busqueda-lexico">
-            </div>
-            <div class="contenedor-general-opciones-busqueda">
-              <!-- Checkbox Neutralize vowel length -->
-
-              <label class="contenedor-checkbox-custom" title="Activate flexible orthography">
-                <!--Solo se muestra al seleccionar "Plant name" en el dropdown-->
-                <input type="checkbox">
-                <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Flexible&NonBreakingSpace;orthography</span>
-              </label>
-              <!-- Checkbox bilingue -->
-              <label class="contenedor-checkbox-custom " title="Activate bilingual search">
-                <input type="checkbox">
-                <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Bilingual&NonBreakingSpace;search</span>
-              </label>
-              <!-- Checkbox Tesauro -->
-              <!--Solo se muestra al seleccionar "Plant gloss y/o Field recording summary AND Description" en el dropdown-->
-              <label class="contenedor-checkbox-custom" title="Activate thesaurus">
-                <input type="checkbox">
-                <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Thesaurus</span>
-              </label>
-              <!-- Checkbox Tesauro Taxonómico-->
-              <!--Solo se muestra al seleccionar "Genus-species" en el dropdown-->
-              <label class="contenedor-checkbox-custom" title="Activate taxonomic thesaurus">
-                <input type="checkbox">
-                <span class="cuadro-check" title=""></span>
-                <span class="etiqueta-checkbox">Taxonomic&NonBreakingSpace;thesaurus</span>
-              </label>
-              <!-- Checkbox solo sonidos -->
-              <label class="contenedor-checkbox-custom " title="Only display inputs with sound">
-                <input type="checkbox">
-                <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Only display inputs&NonBreakingSpace;with&NonBreakingSpace;sound</span>
-              </label>
-
+              <input type="search" placeholder="Type words for search" class="input-caja-busqueda">
             </div>
 
-            <!-- <div class="contenedor-general-botones-busqueda ">
+
+
+
+
+            <div class="contenedor-general-botones-busqueda-library ">
               <div class="contenedor-botones-izquierda ">
-                <button id="adfilter" class="btn-secundario">Add filter</button>
-              </div>
-              <div class="contenedor-botones-derecha  ">
-                <button type="reset" id="reset-lexico-buscador" class="btn-secundario">Reset</button>
-
-                <button type="submit" id="search-lexico">Search</button>
-              </div>
-            </div> -->
-
-            <div class="caja-busqueda-lexico">
-              <!-- Selector personalizado https://www.w3schools.com/howto/howto_custom_select.asp -->
-              <div class="dropdown-opcion-filtro ">
-                <select>
-                  <option value="and">and</option>
-                  <option value="or">or</option>
-                  <option value="and not">and not</option>
-                  <option value="or not">or not</option>
-                </select>
-              </div>
-
-
-
-
-              <div class="dropdown-tipo-busqueda ">
-                <select>
-                  <option value="Headword">Headword</option>
-                  <option value="Gloss">Gloss</option>
-                  <option value="Root">Root</option>
-                  <option value="Semantic field">Semantic field</option>
-                  <option value="Grammatical category">Grammatical category</option>
-                  <option value="Inflection">Inflection</option>
-                  <option value="Exact meaning">Exact meaning</option>
-                  <option value="Extended meaning">Extended meaning</option>
-                  <option value="Illustrative phrases">Illustrative phrases</option>
-                  <option value="Full search">Full search</option>
-                </select>
-              </div>
-              <div class="dropdow-parametros-palabras">
-                <select>
-                  <option value="begins with">begins with</option>
-                  <option value="ends with">ends with</option>
-                  <option value="contains sequence">contains sequence</option>
-                  <option value="contains word">contains word</option>
-                  <option value="exactly equals">exactly equals</option>
-                  <option value="regular expression">regular expression</option>
-
-                </select>
-              </div>
-              <input type="search" placeholder="Type words for search" class="input-caja-busqueda-lexico">
-              <!-- Botón eliminar filtro -->
-              <button class="eliminar-filtro" id="btn-eliminar-filtro-mixteco">x</button>
-            </div>
-            <div class="contenedor-general-opciones-busqueda">
-              <!-- Checkbox Neutralize vowel length -->
-
-              <label class="contenedor-checkbox-custom" title="Activate flexible orthography">
-                <!--Solo se activa cuando -->
-                <input type="checkbox">
-                <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Flexible&NonBreakingSpace;orthography</span>
-              </label>
-              <!-- Checkbox bilingue -->
-              <label class="contenedor-checkbox-custom " title="Activate bilingual search">
-                <input type="checkbox">
-                <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Bilingual&NonBreakingSpace;search</span>
-              </label>
-              <!-- Checkbox Tesauro -->
-              <label class="contenedor-checkbox-custom" title="Activate thesaurus">
-                <input type="checkbox">
-                <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Thesaurus</span>
-              </label>
-              <!-- Checkbox Tesauro Taxonómico-->
-              <label class="contenedor-checkbox-custom" title="Activate taxonomic thesaurus">
-                <input type="checkbox">
-                <span class="cuadro-check" title=""></span>
-                <span class="etiqueta-checkbox">Taxonomic&NonBreakingSpace;thesaurus</span>
-              </label>
-              <!-- Checkbox solo sonidos -->
-              <label class="contenedor-checkbox-custom " title="Only display inputs with sound">
-                <input type="checkbox">
-                <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Only display inputs&NonBreakingSpace;with&NonBreakingSpace;sound</span>
-              </label>
-
-            </div>
-            <div class="contenedor-general-botones-busqueda ">
-              <div class="contenedor-botones-izquierda ">
-                <button id="btn-adfilter-mixteco" class="btn-secundario">Add filter</button>
-              </div>
-              <div class="contenedor-botones-derecha  ">
                 <button type="reset" id="btn-reset-lexico-buscador-mixteco" class="btn-secundario">Reset</button>
-
+              </div>
+              <div class="contenedor-botones-derecha  ">
                 <button type="submit" id="btn-search-lexico-mixteco">Search</button>
               </div>
             </div>
@@ -264,25 +141,11 @@
                     <span class="autor">(Vahl) Pers.</span>
                     <span class="familia">Acanthaceae</span>
                   </h2>
-                  <div class="contenedor-taxon-page-demca">
-                    <p class="etiqueta-taxon-page-demca">Taxon page in DEMCA:</p><button class="btn-micro-taxon-demca"
-                      onclick="window.open('https://demca.mesolex.org/portal/taxa/index.php?taxon=Elytraria+imbricata&formsubmit=Search+Terms','_blank')"
-                      target="_blank"><span class="material-icons icono-play-boton-micro ">
-                        link</span></button>
-
-                  </div>
                 </div>
                 <div class="contenedor-colecta-datos">
-                  <p class="etiqueta-colecta">Collection:
+                  <p class="etiqueta-colecta">Collect:
                     <span class="colecta">40807</span>
                   </p>
-                  <audio src=""></audio><button class="btn-micro-audio-externo"
-                    onclick="window.open('https://demca.mesolex.org/portal/ethno/eaf/eafdetail.php?mediaid=205&collid=0','_blank')"
-                    target="_blank"><span class="material-icons icono-play-boton-micro ">
-                      volume_up</span></button>
-
-
-
                 </div>
               </section>
               <!-- MAIN DE TARJETA -->
@@ -326,30 +189,8 @@
                     <div class="fila-sumario-comentarios">
                       <!-- Columna izquierda -->
                       <div class="col-etiqueta">
-                        <p class="etiqueta-comentarios">Field recording summary</p>
+                        <p class="etiqueta-comentarios">Comments:</p>
                         <p class="etiqueta-uid-grabacion">UID:<span class="uid-grabacion">2017-11-28-b</span></p>
-                      </div>
-                      <!-- Columna derecha -->
-                      <div class="col-dato">
-                        <p class="resumen">Fernando Niño dice que el nombre de la planta es <mix>ndu³ku2 si’1ba1 ñu’³u⁴
-                          </mix>
-                          ('vara cacao tierra'). No tiene ningún uso, sus flores son moradas. Constantino Teodoro
-                          Bautista, dice que su raíz huele a cacao si se frota y por eso se le llama ndu³ku2 si’1ba1.
-                          Sus
-                          flores son moradas y muy bonitas, pero son pequeñas y no sirven para llevar al panteón.
-                          Esteban
-                          Guadalupe Sierra también dice que el nombre de la planta es <mix>ndu³ku2 si’1ba1</mix>.
-                          Comenta que ni
-                          sus
-                          flores ni las ramas tiene uso. La planta se la comen los chivos. Sus flores son pequeñas y
-                          moradas.</p>
-                      </div>
-                    </div>
-                    <div class="fila-sumario-comentarios">
-                      <!-- Columna izquierda -->
-                      <div class="col-etiqueta">
-                        <p class="etiqueta-comentarios">Comments</p>
-
                       </div>
                       <!-- Columna derecha -->
                       <div class="col-dato">
@@ -384,13 +225,9 @@
                   </h2>
                 </div>
                 <div class="contenedor-colecta-datos">
-                  <p class="etiqueta-colecta">Collection:
+                  <p class="etiqueta-colecta">Collect:
                     <span class="colecta">1903</span>
                   </p>
-                  <audio src=""></audio><button class="btn-micro-audio-externo"
-                    onclick="window.open('https://demca.mesolex.org/portal/ethno/eaf/eafdetail.php?mediaid=205&collid=0','_blank')"
-                    target="_blank"><span class="material-icons icono-play-boton-micro ">
-                      volume_up</span></button>
                 </div>
               </section>
               <section class="main-tarjeta">
@@ -427,7 +264,7 @@
                     <div class="fila-sumario-comentarios">
                       <div class="col-etiqueta">
                         <p class="etiqueta-comentarios">Comments:</p>
-                        <!-- <p class="etiqueta-uid-grabacion">UID:2015-09-25-a</p> Los comentarios no llevan UID-->
+                        <p class="etiqueta-uid-grabacion">UID:2015-09-25-a</p>
                       </div>
                       <div class="col-dato">
                         <p class="comentarios">Lorem ipsum dolor sit amet consectetur adipisicing elit. In reprehenderit
@@ -457,13 +294,9 @@
                   </h2>
                 </div>
                 <div class="contenedor-colecta-datos">
-                  <p class="etiqueta-colecta">Collection:
+                  <p class="etiqueta-colecta">Collect:
                     <span class="colecta">1903</span>
                   </p>
-                  <audio src=""></audio><button class="btn-micro-audio-externo"
-                    onclick="window.open('https://demca.mesolex.org/portal/ethno/eaf/eafdetail.php?mediaid=205&collid=0','_blank')"
-                    target="_blank"><span class="material-icons icono-play-boton-micro ">
-                      volume_up</span></button>
                 </div>
               </section>
               <section class="main-tarjeta">
@@ -500,7 +333,7 @@
                     <div class="fila-sumario-comentarios">
                       <div class="col-etiqueta">
                         <p class="etiqueta-comentarios">Comments:</p>
-
+                        <p class="etiqueta-uid-grabacion">UID:2015-09-25-a</p>
                       </div>
                       <div class="col-dato">
                         <p class="comentarios">Lorem ipsum dolor sit amet consectetur adipisicing elit. In reprehenderit
@@ -521,8 +354,8 @@
                     class="btn-play-small-mixteco"><span class="material-icons icono-play-boton">
                       play_arrow
                     </span></button>
-                  <div class="contenedor-glosas-y-nombre-plantas-mixteco ">
-                    <div class="contenedor-grupo-glosas-y-nombres">
+                  <div class="contenedor-glosas-y-nombre-plantas-mixteco">
+                    <div class="contenedor-grupo-glosas-y-nombres  ">
                       <div class="contenedor-glosa ">
                         <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
                         <p class="nombre-planta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
@@ -532,7 +365,7 @@
                       </div>
                     </div>
                     <div class="contenedor-grupo-glosas-y-nombres  ">
-                      <div class="contenedor-glosa  ">
+                      <div class="contenedor-glosa ">
                         <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
                         <p class="nombre-planta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
                           adipisci?</p>
@@ -540,27 +373,29 @@
                           animi quis corporis.</p>
                       </div>
                     </div>
-                    <div class="contenedor-grupo-glosas-y-nombres  ">
-                      <div class="contenedor-glosa  ">
+                    <div class="contenedor-grupo-glosas-y-nombres ">
+                      <div class="contenedor-glosa ">
                         <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
-                        <p class="nombre-planta">Lorem ipsum dolor sit amet</p>
-                        <p class="glossa-planta">Lorem ipsum, dolor sit amet</p>
+                        <p class="nombre-planta">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="glossa-planta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae.</p>
                       </div>
                     </div>
                   </div>
                   <div class="contenedor-sumarios-y-comentarios">
                     <div class="fila-sumario-comentarios">
                       <div class="col-etiqueta">
-                        <p class="etiqueta-comentarios">Field recording summary</p>
+                        <p class="etiqueta-comentarios">Comments:</p>
                         <p class="etiqueta-uid-grabacion">UID:2015-09-25-a</p>
                       </div>
                       <div class="col-dato">
-                        <p class="comentarios">Lorem ipsum <sci>Sci</sci> consectetur adipisicing elit. In
-                          reprehenderit soluta nihil dolore, natus ducimus quod consectetur ipsum! <mix>Lenguaje en
-                            mixteco</mix> Eveniet corporis fugit doloribus eos repudiandae reiciendis nisi a!
+                        <p class="comentarios">Lorem ipsum dolor sit amet consectetur adipisicing elit. In reprehenderit
+                          soluta nihil dolore, natus ducimus quod consectetur ipsum! Consectetur, delectus fugit?
+                          Eveniet
+                          corporis fugit doloribus eos repudiandae reiciendis nisi a!
                           Praesentium similique a asperiores non earum odit, quidem nesciunt rem quia omnis sapiente
-                          nihil perspiciatis eum obcaecati laborum dolorem nulla quisquam tenetur voluptate eaque
-                          voluptatum? Sunt porro optio corrupti illo.</p>
+                          nihil
+                          perspiciatis eum obcaecati laborum dolorem nulla quisquam tenetur voluptate eaque voluptatum?
+                          Sunt porro optio corrupti illo.</p>
                       </div>
                     </div>
                   </div>
@@ -644,7 +479,7 @@
   <script>
     var x, i, j, l, ll, selElmnt, a, b, c;
     /* Look for any elements with the class "custom-select": */
-    x = document.getElementsByClassName("dropdown-tipo-busqueda");
+    x = document.getElementsByClassName("dropdown-libreria");
     l = x.length;
     for (i = 0; i < l; i++) {
       selElmnt = x[i].getElementsByTagName("select")[0];

@@ -38,7 +38,7 @@ h3.titulo-modulo {
 }
 p.descripcion-modulo {
   color: white;
-
+  font-size: 0.955rem;
   line-height: 120%;
 }
 /*PARTICULARIDADES DE CADA MODULO*/

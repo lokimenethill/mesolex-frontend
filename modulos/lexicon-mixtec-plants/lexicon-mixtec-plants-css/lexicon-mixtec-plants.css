@@ -48,7 +48,7 @@ a.texto-vinculo-readme:visited {
 .contenedor-buscador-general-lexico {
   margin-top: 2rem;
 }
-/* Caja de busqueda; contiene dropdowns y caha de texto de busqueda */
+/* Caja de busqueda; contiene dropdowns y caja de texto de busqueda */
 .caja-busqueda-lexico {
   border: 1px solid var(--gris3);
   display: flex;
@@ -436,10 +436,11 @@ button.eliminar-filtro:hover {
 .contenedor-header-resultado {
   border-bottom: 2px solid var(--mixteco0);
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 .titulo-header-tarjeta {
   margin-top: 0.3333rem !important;
-  margin-bottom: 0.3333rem !important;
+  margin-bottom: 0.5rem !important;
 }
 .genero {
   font-style: italic !important;
@@ -460,25 +461,78 @@ button.eliminar-filtro:hover {
   font-weight: 400;
   margin-right: 0.2rem;
   color: var(--gris1);
+  margin-bottom: 0.77rem !important;
 }
-/* .familia::before {
-  content: "[ ";
+.familia::before {
+  content: "(";
 }
 .familia::after {
-  content: " ]";
-} */
+  content: ")";
+}
 
+.contenedor-taxon-page-demca {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 0.3rem !important;
+}
+.etiqueta-taxon-page-demca {
+  font-size: 0.77rem;
+  font-weight: 400;
+  line-height: 0.77rem;
+  margin-top: 0 !important;
+  margin-bottom: 0rem !important;
+  color: var(--gris1);
+  display: inline-block;
+}
+
+button.btn-micro-taxon-demca {
+  height: 1rem !important;
+  width: 1rem !important;
+  padding: 0 !important;
+  margin: 0 0 0 0.3rem !important;
+  font-size: 0.77rem !important;
+  line-height: 2px;
+  overflow: hidden;
+  vertical-align: middle;
+}
 .contenedor-colecta-datos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.77rem !important;
 }
 .etiqueta-colecta {
   font-size: 0.77rem;
   font-weight: 400;
+  line-height: 0.77rem;
   margin-top: 0 !important;
-  margin-bottom: 0.77rem !important;
+  margin-bottom: 0rem !important;
   color: var(--gris1);
+  display: inline-block;
 }
 .colecta {
   font-weight: 600;
+  display: inline-block;
+  line-height: 0.77rem;
+  font-size: 0.77rem;
+}
+button.btn-micro-audio-externo {
+  height: 1rem !important;
+  width: 1rem !important;
+  padding: 0 !important;
+  margin: 0 0.3rem !important;
+  font-size: 0.77rem !important;
+  line-height: 2px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+button.btn-micro-audio-externo:hover {
+}
+
+.icono-play-boton-micro {
+  font-size: 0.77rem !important;
+  margin-top: 0px;
 }
 .contenedor-datos-comunidad {
   margin-top: 1rem;
@@ -529,8 +583,8 @@ button.eliminar-filtro:hover {
   margin-bottom: 1.5rem !important;
 }
 .contenedor-grupo-glosas-y-nombres {
-  /* min-width: 16.66%;
-  max-width: calc(33.33% - 1rem); */
+  /* min-width: 16.66%;*/
+  max-width: calc(33.33% - 1rem);
   flex-basis: calc(33.33% - 1rem);
   margin-right: 1rem;
   margin-left: 1rem;
@@ -541,17 +595,20 @@ button.eliminar-filtro:hover {
   align-items: stretch;
   justify-content: flex-start;
 }
-.contenedor-grupo-glosas-y-nombres:nth-of-type(1) {
+.contenedor-glosas-y-nombre-plantas-mixteco
+  .contenedor-grupo-glosas-y-nombres:nth-of-type(1) {
   margin-left: 0rem;
 
   justify-content: flex-start !important;
 }
-.contenedor-grupo-glosas-y-nombres:nth-of-type(2) {
+.contenedor-glosas-y-nombre-plantas-mixteco
+  .contenedor-grupo-glosas-y-nombres:nth-of-type(2) {
   justify-content: center !important;
   margin-right: 1rem;
   margin-left: 1rem;
 }
-.contenedor-grupo-glosas-y-nombres:nth-of-type(3) {
+.contenedor-glosas-y-nombre-plantas-mixteco
+  .contenedor-grupo-glosas-y-nombres:nth-of-type(3) {
   margin-right: 0;
   justify-content: flex-end !important;
 }
@@ -568,13 +625,13 @@ button.eliminar-filtro:hover {
   color: var(--gris1);
 }
 .nombre-planta {
-  color: var(--negro);
+  color: var(--mixteco0);
   margin-top: 0 !important;
   margin-bottom: 0.25rem;
   font-weight: 400;
 }
 .glossa-planta {
-  color: var(--mixteco0);
+  color: var(--negro);
   margin-top: 0 !important;
   margin-bottom: 0.25rem;
   font-style: italic;
@@ -614,10 +671,19 @@ button.eliminar-filtro:hover {
   flex-basis: calc(66.6666% - 0.5rem);
   margin-left: 0.5rem;
 }
-.comentarios {
+.comentarios,
+.resumen {
   color: var(--negro);
   font-size: 0.8888rem;
 }
 
 .footer-tarjeta {
+}
+sci {
+  font-style: italic;
+}
+
+mix {
+  color: var(--mixteco0);
+  font-style: italic;
 }
