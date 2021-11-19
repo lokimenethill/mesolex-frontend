@@ -64,7 +64,7 @@
           <p class="breadcums">/</p><a href="" class="breadcums-activo">Mixtec</a>
         </div>
         <h6>Lexicon</h6>
-        <h1 id="titulo-lexico-mixteco">Mixtec plants</h1>
+        <h1 id="titulo-lexico-mixteco">Plants in Yoloxóchitl Mixtec</h1>
 
         <div class="contenedor-elementos-notas-lexico">
           <a href="#" class="icono-vinculo-readme ">
@@ -142,7 +142,8 @@
               <label class="contenedor-checkbox-custom " title="Only display inputs with sound">
                 <input type="checkbox">
                 <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Only display inputs&NonBreakingSpace;with&NonBreakingSpace;sound</span>
+                <span class="etiqueta-checkbox">Only display
+                  inputs&NonBreakingSpace;with&NonBreakingSpace;recordings</span>
               </label>
 
             </div>
@@ -232,7 +233,8 @@
               <label class="contenedor-checkbox-custom " title="Only display inputs with sound">
                 <input type="checkbox">
                 <span class="cuadro-check"></span>
-                <span class="etiqueta-checkbox">Only display inputs&NonBreakingSpace;with&NonBreakingSpace;sound</span>
+                <span class="etiqueta-checkbox">Only display
+                  inputs&NonBreakingSpace;with&NonBreakingSpace;recordings</span>
               </label>
 
             </div>
@@ -265,10 +267,14 @@
                     <span class="familia">Acanthaceae</span>
                   </h2>
                   <div class="contenedor-taxon-page-demca">
-                    <p class="etiqueta-taxon-page-demca">Taxon page in DEMCA:</p><button class="btn-micro-taxon-demca"
+                    <p class="etiqueta-taxon-page-demca">DEMCA: Taxon page</p><button class="btn-micro-taxon-demca"
                       onclick="window.open('https://demca.mesolex.org/portal/taxa/index.php?taxon=Elytraria+imbricata&formsubmit=Search+Terms','_blank')"
                       target="_blank"><span class="material-icons icono-play-boton-micro ">
                         link</span></button>
+                    <p class="etiqueta-taxon-page-demca"> Audio of taxon</p><button class="btn-micro-taxon-demca"
+                      onclick="window.open('https://demca.mesolex.org/portal/ethno/eaf/eafdetail.php?mediaid=105&collid=25','_blank')"
+                      target="_blank"><span class="material-icons icono-play-boton-micro ">
+                        volume_up</span></button>
 
                   </div>
                 </div>
@@ -293,6 +299,7 @@
                   <p class="etiqueta-comunidad">Community:</p>
                   <h3 class="comunidad">Yoloxóchitl </h3>
                   <audio src=""></audio>
+                  <!-- YA NO VA EL BOTON  -->
                   <!--El audio no supe como manejarlo, tiene que ver con backend-->
                   <!--Boton de reproduccion-->
                   <button class="btn-play-small-mixteco">
@@ -566,6 +573,127 @@
                   </div>
                 </div>
               </section>
+              <section class="footer-tarjeta">
+              </section>
+            </article>
+            <article class="tarjeta">
+              <section class="header-tarjeta">
+                <div class="contenedor-header-resultado">
+                  <!--Este sirve para poner el borde de abajo-->
+                  <h2 class="titulo-header-tarjeta">
+                    <!--Se llenara con los datos de la API-->
+                    <span class="genero">Ruellia</span>
+                    <span class="especie">foetida</span>
+                    <span class="autor">Willd.</span>
+                    <span class="familia">Acanthaceae</span>
+                  </h2>
+                  <div class="contenedor-taxon-page-demca">
+                    <p class="etiqueta-taxon-page-demca">DEMCA: Taxon page</p><button class="btn-micro-taxon-demca"
+                      onclick="window.open('https://demca.mesolex.org/portal/taxa/index.php?taxon=Ruellia+foetida&formsubmit=Search+Terms','_blank')"
+                      target="_blank"><span class="material-icons icono-play-boton-micro ">
+                        link</span></button>
+                    <p class="etiqueta-taxon-page-demca"> Audio of taxon</p><button class="btn-micro-taxon-demca"
+                      onclick="window.open('https://demca.mesolex.org/portal/ethno/eaf/eafdetail.php?mediaid=105&collid=25','_blank')"
+                      target="_blank"><span class="material-icons icono-play-boton-micro ">
+                        volume_up</span></button>
+
+                  </div>
+                </div>
+                <div class="contenedor-colecta-datos">
+                  <p class="etiqueta-colecta">Collection:
+                    <span class="colecta">40202</span>
+                  </p>
+                  <audio src=""></audio><button class="btn-micro-audio-externo"
+                    onclick="window.open('https://demca.mesolex.org/portal/ethno/eaf/eafdetail.php?mediaid=180','_blank')"
+                    target="_blank"><span class="material-icons icono-play-boton-micro ">
+                      volume_up</span></button>
+
+
+
+                </div>
+              </section>
+              <!-- MAIN DE TARJETA -->
+              <section class="main-tarjeta">
+                <!-- Un resultado de tarjeta, puede traer varias comunidades y cada comunidad puede tener un audio -->
+                <div class="contenedor-datos-comunidad">
+                  <!--Agrupa los datos de cada comunidad-->
+                  <p class="etiqueta-comunidad">Community:</p>
+                  <h3 class="comunidad">Yoloxóchitl </h3>
+                  <!-- <audio src=""></audio> -->
+                  <!-- YA NO VA EL BOTON  -->
+                  <!--El audio no supe como manejarlo, tiene que ver con backend-->
+                  <!--Boton de reproduccion-->
+                  <!-- <button class="btn-play-small-mixteco">
+                    <span class="material-icons icono-play-boton">
+                      play_arrow
+                    </span></button> -->
+                  <!-- Cada comunidad puede tener hasta 3 glosas y nombres de planta -->
+                  <div class="contenedor-glosas-y-nombre-plantas-mixteco ">
+                    <!--Agrupa las glosas y nombres de plantas-->
+                    <div class="contenedor-grupo-glosas-y-nombres  ">
+                      <div class="contenedor-glosa ">
+                        <!--p class="etiqueta-num-glosa">Gloss {#}</p-->
+                        <p class="nombre-planta">ndu³ku² ko¹ndo¹</p>
+                        <p class="glossa-planta">vara rodilla</p>
+                      </div>
+                    </div>
+                    <div class="contenedor-grupo-glosas-y-nombres">
+                      <div class="contenedor-glosa ">
+
+                        <p class="nombre-planta">yu¹ku¹ ko¹ndo¹</p>
+                        <p class="glossa-planta">hoja rodilla</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Contenedor de comentarios o textos largos son 2 columnas y esta pensado por filas -->
+                  <div class="contenedor-sumarios-y-comentarios">
+                    <!-- Inicia una fila -->
+                    <div class="fila-sumario-comentarios">
+                      <!-- Columna izquierda -->
+                      <div class="col-etiqueta">
+                        <p class="etiqueta-comentarios">Field recording summary</p>
+                        <p class="etiqueta-uid-grabacion">UID:<span class="uid-grabacion">2017-11-28-b</span></p>
+                      </div>
+                      <!-- Columna derecha -->
+                      <div class="col-dato">
+                        <p class="resumen">Constantino Teodoro Bautista reconoce esta planta con el nombre de <mix>
+                            ndu³ku² ko¹ndo¹</mix> ('vara rodilla'). Las varas secas de esta planta se usan para ensartar
+                          flores de <mix>i³ta² nu¹⁴ni⁴</mix> (<sci>Plumeria rubra</sci>, localmente como
+                          'cacaloxóchitl') para las ofrendas. Las hojas verdes se usan para techos y paredes de ramadas
+                          en los camposantos cuando se hacer ofrenda. Donde abunda esta planta se da muy bien la milpa.
+                          Sus flores son blancas y da unas semillas verdes que al madurar son de color café. No se caen
+                          sino que cuando llega la lluvia y cae sobre la planta las vainas se revientan y así se
+                          dispersan las semillas. Filomeno Encarnación Fidencio también conoce esta planta con el mismo
+                          nombre de <mix>ndu³ku² ko¹ndo¹</mix>. La planta, dice, no tiene más uso que para ramada.
+                          Cuando los frutos están secos los niños los juegan introduciéndolos en el agua para ver cómo
+                          truena. Esteban Guadalupe Sierra da el mismo nombre: <mix>ndu³ku² ko¹ndo¹</mix>. Las varas
+                          secas se pueden usar para prender fogata y las ramas verdes se usan para las ramadas. Sus
+                          hojas solas, sin tallo, se hierven y se consume el agua como té para aliviar la gripa.</p>
+                      </div>
+                    </div>
+                    <div class="fila-sumario-comentarios">
+                      <!-- Columna izquierda -->
+                      <div class="col-etiqueta">
+                        <p class="etiqueta-comentarios">Comments</p>
+
+                      </div>
+                      <!-- Columna derecha -->
+                      <div class="col-dato">
+                        <p class="comentarios">Se utilizan las hojas de la <mix>ndu³ku²</mix> (o <mix>yu¹ku¹</mix>)
+                          <mix>ko¹ndo¹</mix> como remedio para
+                          la tos. Se hierve la rama con otras hojas: mango, bugambilia, limón. Se toma como té en la
+                          mañana, bien calientito. También se hierve con hojas de limón para bañar a los enfermos, según
+                          Zoila Guadalupe Sierra y Guillermina Nazario Sotero (un uso no comentado por Esteban Castillo
+                          García y Rey Castillo García). En una colecta posterior de esta planta los asesores repitieron
+                          la misma información y agregaron maís, diciendo que crece en el campo y en la orilla del
+                          pueblo y se usa para hacer sombra de enramadas.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Footer de tarjeta por el momento no tiene nada, pero para el futuro puede servir -->
               <section class="footer-tarjeta">
               </section>
             </article>
