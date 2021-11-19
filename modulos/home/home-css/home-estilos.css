@@ -1,6 +1,7 @@
 .contenedor-slideshow {
   width: 100%;
-  aspect-ratio: 2.8/1;
+  /* aspect-ratio: 2.8/1; */
+  height: 60vh;
 }
 .slide {
   height: 100%;
