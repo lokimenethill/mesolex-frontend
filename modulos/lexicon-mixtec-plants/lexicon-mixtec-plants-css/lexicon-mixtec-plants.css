@@ -482,6 +482,7 @@ button.eliminar-filtro:hover {
   line-height: 0.77rem;
   margin-top: 0 !important;
   margin-bottom: 0rem !important;
+  margin-left: 0.77rem;
   color: var(--gris1);
   display: inline-block;
 }
