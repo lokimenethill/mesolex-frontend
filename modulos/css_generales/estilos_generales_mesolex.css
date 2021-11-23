@@ -584,6 +584,7 @@ button {
   background-color: var(--interface1);
   border: none;
   margin: 0 0.5rem;
+  cursor: pointer;
 }
 
 button:last-of-type {
