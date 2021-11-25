@@ -100,6 +100,32 @@
 *:focus {
   outline: 3px solid #009d9375;
 }
+/*SCROLL BAR*/
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: var(--gris05);
+  border-radius: 5px;
+  height: 3%;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--interface1);
+}
+
 /*>>>>>>>>>>>>>>>>>>>>>>>DIMENSIONES DE PÁGINA<<<<<<<<<<<<<<<<<<<<<<<<*/
 body {
   min-width: 55rem; /*990px*/
