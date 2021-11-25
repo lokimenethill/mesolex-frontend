@@ -103,7 +103,8 @@
 /*SCROLL BAR*/
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 12px;
+  height: 8px;
 }
 
 /* Track */
@@ -115,9 +116,8 @@
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gris05);
-  border-radius: 5px;
-  height: 3%;
+  background: var(--interface4);
+  border-radius: 2px;
 }
 
 /* Handle on hover */
@@ -879,8 +879,9 @@ button.selector-lenguaje {
   background-color: white;
   padding: 0 0.3rem;
   margin-right: 0;
+  margin-left: 0;
   align-self: stretch;
-  min-width: 1.77rem;
+  min-width: 2.114rem;
 }
 
 button.selector-lenguaje:hover {
@@ -901,9 +902,11 @@ button.selector-lenguaje-activo {
   cursor: not-allowed;
   background-color: white;
   padding: 0 0.3rem;
+  margin-right: 0;
+  margin-left: 0;
   align-self: stretch;
   margin-left: 0;
-  min-width: 1.77rem;
+  min-width: 2.114rem;
 }
 button.selector-lenguaje-activo:focus {
   outline: 3px solid #009d9375;
