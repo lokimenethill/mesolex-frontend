@@ -81,6 +81,23 @@
   background-color: var(--library1);
   color: white !important;
 }
+
+/* BOTONES LIBRERIA */
+#btn-reset-lexico-buscador-library {
+  border-color: var(--library1);
+  color: var(--library1);
+}
+#btn-reset-lexico-buscador-library:hover {
+  background-color: var(--library2);
+  color: white;
+  border-color: var(--library2);
+}
+#btn-search-lexico-buscador-library {
+  background-color: var(--library1);
+}
+#btn-search-lexico-buscador-library:hover {
+  background-color: var(--library2);
+}
 /* BOTONES DE buscador lexico */
 .contenedor-general-botones-busqueda-library {
   margin-top: 2rem;
@@ -106,7 +123,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.33rem 0.75rem !important;
+  padding: 0.33rem 0.33rem 0.33rem 0.75rem !important;
   flex-grow: 1;
   flex-basis: 25%;
 }
@@ -171,16 +188,19 @@
   margin: 0 !important;
   line-height: 100%;
   font-size: 1rem;
+  transform: rotate(
+    180deg
+  ); /*Se roto 180deg porque los caracteres de triangulo hacia abajo estan mas altos y generan ruido*/
 }
 .table__header__row__cell__title__btn__des:hover {
   background: none;
 }
 .table__header__row__cell__title__btn__des:hover::before {
-  content: "▼";
+  content: "▲";
   color: var(--interface0);
 }
 .table__header__row__cell__title__btn__des::before {
-  content: "▽";
+  content: "△";
 }
 
 .table__header__row__cell__title__btn__des-active {
@@ -196,7 +216,7 @@
   color: var(--interface0);
 }
 .table__header__row__cell__title__btn__des-active::before {
-  content: "▼";
+  content: "▲";
 }
 
 .table__main {
@@ -206,13 +226,20 @@
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
-
   border-bottom: 1px solid var(--gris3);
 }
+.table__main__row:nth-of-type(even) {
+  background: var(--library3);
+}
 .table__main__row__cell {
-  padding: 1rem 0.75rem !important;
+  padding: 1rem 0.75rem;
   flex-grow: 1;
   flex-basis: 25%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 .table__main__row__cell:last-of-type {
 }
@@ -240,27 +267,43 @@
   width: 1rem !important;
   padding: 0 !important;
   margin: 0 !important;
+  background: var(--library1);
+  align-self: center;
+}
+.table__main__row_cell__button-button_micro:hover {
+  background: var(--library2);
+}
+.table__main__row_cell__button-button_micro__icono_boton_descagar_micro {
+  font-size: 18px !important;
+  margin: 0 !important;
 }
 
 /* Ajustes de anchos */
+/*Las filas de header, main y footer, deben de ir ligadas en tamaño, por eso estan juntas*/
 
 .table__header__row__cell:nth-of-type(1),
 .table__main__row__cell:nth-of-type(1) {
-  flex-basis: 30%;
+  flex-basis: 25%;
+  flex-grow: 2;
 }
 .table__header__row__cell:nth-of-type(2),
 .table__main__row__cell:nth-of-type(2) {
-  flex-basis: 20%;
+  flex-basis: 22.5%;
+  flex-grow: 1;
 }
 .table__header__row__cell:nth-of-type(3),
 .table__main__row__cell:nth-of-type(3) {
-  flex-basis: 22%;
+  flex-basis: 23.5%;
+  flex-grow: 1;
 }
 .table__header__row__cell:nth-of-type(4),
 .table__main__row__cell:nth-of-type(4) {
-  flex-basis: calc(18% - 1rem);
+  flex-basis: calc(19% - 1.36rem);
+  flex-grow: 1;
 }
 .table__header__row__cell:nth-of-type(5),
 .table__main__row__cell:nth-of-type(5) {
-  flex-basis: 2rem;
+  flex-basis: 1.36rem !important;
+  padding: 1rem 0.33rem 1rem 0 !important;
+  flex-grow: 0;
 }
