@@ -219,8 +219,8 @@
   content: "▲";
 }
 
-.table__main {
-}
+/* .table__main {
+} */
 .table__main__row {
   display: flex;
   flex-flow: row nowrap;
@@ -241,8 +241,8 @@
   justify-content: flex-start;
   align-items: center;
 }
-.table__main__row__cell:last-of-type {
-}
+/* .table__main__row__cell:last-of-type {
+} */
 .table__main__row__cell:first-of-type {
   padding-left: 0.33rem !important;
 }
@@ -469,8 +469,8 @@ p.ano {
   text-align: right !important;
 }
 /* Contenedor para scroll de texto */
-.contenedor-texto-lengua-pantalla-emergente-ficha--bibliografica {
-}
+/* .contenedor-texto-lengua-pantalla-emergente-ficha--bibliografica {
+} */
 /* Contenedor para imagen derecha */
 .columna-derecha-pantalla-emergente-ficha--bibliografica {
   flex-basis: calc(85% - 0.5rem);
