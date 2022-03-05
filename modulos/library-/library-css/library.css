@@ -292,6 +292,7 @@
 .table__main__row__cell__data__terminal--lang::before {
   content: "●";
   color: var(--library1) !important;
+  font-size: 0.88rem;
   margin-right: 0.25rem;
   margin-left: -0.66rem;
 }
