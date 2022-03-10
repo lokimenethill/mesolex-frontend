@@ -458,6 +458,7 @@ h6 {
   line-height: 0;
   font-size: 0; */
   position: relative;
+  overflow: hidden;
 }
 
 .indice__tarjeta__header__liga {
@@ -474,7 +475,7 @@ h6 {
 }
 
 .indice__tarjeta__header__liga__img {
-  width: 100%;
+  width: 102%;
   height: auto;
   aspect-ratio: 1/1;
   margin: 0;
