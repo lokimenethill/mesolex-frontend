@@ -283,6 +283,9 @@ p.smallest {
 ol {
   font-family: "Fira Sans", sans-serif;
 }
+a:visited {
+  color: currentColor;
+}
 /*>>>>>>>>>>>>>>>>>>>>>>>BOTONES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 button {
@@ -377,7 +380,7 @@ h6 {
   /* justify-content: stretch; */
   /* align-items: stretch; */
 }
-.indice {
+/* .indice {
   flex-grow: 1;
   flex-shrink: 1;
   max-height: 310px;
@@ -385,33 +388,138 @@ h6 {
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: stretch;
-  flex
+  margin: 1rem 0;
+}
+.indice-grid {
+  margin: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .indice__item {
-  width: 33%;
-  
+  width: 30%;
+  border: 1px solid red;
 
   /* max-width: 50%; */
+/* }
+.indice__item-square {
+  flex-basis: 23%;
+  flex-grow: 1;
+  aspect-ratio: 1/1;
+  border: 1px solid orange;
+
+  position: relative;
 }
 
 .indice__item__link {
   font-family: "Fira Sans", sans-serif;
   color: var(--interface1);
   text-decoration: none;
+  display: block;
+  border: 1px solid blueviolet;
 }
 .indice__item__link:visited {
 }
+.indice__item__link__image {
+  aspect-ratio: 1/1;
+  z-index: 1;
+}
+.indice__item__titulo {
+  font-size: 0.955rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 2;
+  margin: 0;
+  color: #fff;
+} */
+
+.indice-grid {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.indice__tarjeta {
+  border: 1px solid var(--gris3);
+  flex-basis: calc(25% - 2px);
+  margin: 0;
+  background-color: #fff;
+}
+.indice__tarjeta__header {
+  background-color: var(--negro);
+  background-blend-mode: multiply;
+  aspect-ratio: 1/1;
+  /* margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0;
+  font-size: 0; */
+  position: relative;
+}
+
+.indice__tarjeta__header__liga {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0;
+  font-size: 0;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.75);
+}
+.indice__tarjeta__header__liga:visited {
+  color: #fff;
+}
+
+.indice__tarjeta__header__liga__img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  display: block;
+  opacity: 0.66;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+.indice__tarjeta__header:hover .indice__tarjeta__header__liga__img {
+  opacity: 0.5;
+  background-blend-mode: multiply;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+.indice__tarjeta__header:hover {
+  background-color: var(--interface0);
+}
+
+.indice__tarjeta__header__liga__titulo {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  margin: 0 !important;
+  font-size: 1rem;
+  line-height: normal;
+  letter-spacing: 2px;
+  min-height: 2.2rem;
+}
+.indice__tarjeta__body__title {
+  margin-left: 0.88rem;
+  margin-right: 0.88rem;
+  color: #ffffff !important;
+}
+
 @media only screen and (min-width: 1200px) {
   :root {
     font-size: 20px;
   }
   .main__contenedor_general {
     max-width: 1200px;
-    
   }
   .contenedor-general {
     max-width: 1200px;
-    
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1198px) {
@@ -427,6 +535,9 @@ h6 {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   :root {
     font-size: 16px;
+  }
+  .indice__item {
+    width: 50%;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -459,6 +570,8 @@ h6 {
   }
   .indice {
     height: 100%;
+    flex-flow: row wrap;
+    max-height: none;
   }
   .indice__item {
     padding: 1rem;
