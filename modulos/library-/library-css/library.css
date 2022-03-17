@@ -537,7 +537,15 @@ p.ficha_texto {
 .boton_library:hover {
   background-color: var(--library2) !important;
 }
-
+span a {
+  color: var(--interfacesp) !important;
+  font-weight: 400;
+}
+span a:hover {
+  color: var(--interface0) !important;
+  font-weight: 600;
+  text-decoration-color: var(--interface1) !important;
+}
 /* a {
   position: sticky;
   bottom: ;
